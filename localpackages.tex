@@ -1,0 +1,46 @@
+% add all extra packages you need to load to this file  
+\usepackage{tabularx} 
+\usepackage{tabu} % tabellen an die Seiten anpassen
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{multirow}
+% \usepackage{adjustbox}
+\usepackage{appendix}
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,tabsize=2,breaklines=true}
+
+
+% \usepackage{graphicx} % to include graphs 
+\graphicspath{ {images/} } %my path in which I store the graphs
+
+\usepackage{subfigure} % so kann man subfigzres macehn
+%\usepackage{subcaption}
+
+\usetikzlibrary{shapes,arrows,positioning,fit}
+\usetikzlibrary{backgrounds}
+\usepackage{tikz-qtree}
+
+% % \usepackage[safe]{tipa} % IPA
+\usepackage{latexsym} % Sonderzeichen
+
+\usepackage{csquotes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%           Examples                           %%%
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%% to add additional information to the right of examples, uncomment the following line
+% \usepackage{jambox}
+%% if you want the source line of examples to be in italics, uncomment the following line
+% \renewcommand{\exfont}{\itshape}
+\usepackage{./langsci/styles/langsci-optional}
+\usepackage{./langsci/styles/langsci-lgr}
+\makeatletter
+\let\pgfmathModX=\pgfmathMod@
+\usepackage{pgfplots,pgfplotstable}%
+\let\pgfmathMod@=\pgfmathModX
+\makeatother
+\usepackage{./langsci/styles/langsci-gb4e}
