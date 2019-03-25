@@ -1,19 +1,11 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-%%%     Language Science Press Master File       %%%
-%%%         follow the instructions below        %%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 
-% Everything following a % is ignored
-% Some lines start with %. Remove the % to include them
-
 \documentclass[output=book,nonflat,modfonts,
   colorlinks,citecolor=brown, 
-%  draft,draftmode,  
+ draft,draftmode,  
 %  showindex,
 %  nobabel,
 %  booklanguage=german,
 %  multiauthors,
-		  ]{langsci/langscibook}    
+		  ]{langscibook}    
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%          additional packages                 %%% 
@@ -27,8 +19,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%             Frontmatter                      %%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\begin{document} 
- 
+\begin{document}  
 \input{localcommands.tex} 
   
 \maketitle                
@@ -37,7 +28,7 @@
 \currentpdfbookmark{Contents}{name} % adds a PDF bookmark
 {\sloppy\tableofcontents}
  %\include{chapters/preface}
- \include{chapters/acknowledgments}
+%  \include{chapters/acknowledgments}
  %\include{chapters/abbreviations} 
 \mainmatter     
  
@@ -46,18 +37,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
  %add a percentage sign in front of the line to exclude this chapter from book
- \include{chapters/Introduction} 
-\include{chapters/chapter2}
- \include{chapters/Chapter3}   
- \include{chapters/Chapter4}   
-\include{chapters/Chapter5}   
-\include{chapters/Chapter6}   
-\include{chapters/Chapter7}   
-\include{chapters/Chapter8}   
- \include{chapters/Chapter9}   
+%  \include{chapters/Introduction} 
+% \include{chapters/chapter2}
+%  \include{chapters/Chapter3}   
+%  \include{chapters/Chapter4}   
+% \include{chapters/Chapter5}   
+% \include{chapters/Chapter6}   
+% \include{chapters/Chapter7}   
+% \include{chapters/Chapter8}   
+%  \include{chapters/Chapter9}   
 
 \appendix
-\include{chapters/Appendix}   
+% \include{chapters/Appendix}   
 
 % % copy the lines above and adapt as necessary
 
@@ -68,7 +59,5 @@
 \input{localseealso.tex} 
 % There is normally no need to change the backmatter section
 \input{backmatter.tex} 
-\end{document} 
+\end{document}  
 
-% you can create your book by running
- xelatex main.tex 
