@@ -1,4 +1,4 @@
-\chapter{General Method} \label{General Method}
+\chapter{General method} \label{General Method}
 
 \vspace*{-0.3cm}
 
@@ -15,7 +15,7 @@ In the first part of this chapter, I will discuss general differences between co
 Even though large parts of the methodology are the same in both studies, there are several aspects in which the studies' methodologies deviate from each other. The specific methodology for each study will be described in chapters \ref{Corpus Studies} and \ref{Experimental Studies}.\footnote{An earlier version of sections \ref{Acoustic Analysis}, \ref{stats}  and \ref{General method annotation} has been published in \cite{BenHedia.2017}.}
 
 
-\section{Corpus Studies vs. Experimental Studies on Speech Production} \label{corpus and experimental studies}
+\section{Corpus studies vs. experimental studies on speech production} \label{corpus and experimental studies}
 
 
 % Corpus study: advantages
@@ -42,7 +42,7 @@ By conducting a corpus study and an experimental study I will furthermore be abl
 
 
 
-\section{Composition of the Data Sets} \label{General Method Data Sets}
+\section{Composition of the data sets} \label{General Method Data Sets}
 
 To investigate gemination different structures were included in the data sets. The term \newterm{structure} refers to sets of words with a particular orthographic, phonological and morphological make-up. In this section, I will introduce the different structures included in the studies, and explain their relevance for the investigation.
  First, I will describe the structures investigated in the corpus study. Then, I will describe the structures investigated in the experimental study. Finally, I will give an overview of the composition of the data sets in both studies. The overview contains a comparison of the structures investigated in the corpus and the experimental study, as well as a summary of the type and token frequencies for both studies. A detailed description of how the items were selected in each study will be given in chapter \ref{Corpus Studies} and chapter \ref{Experimental Studies}.
@@ -129,7 +129,7 @@ For the prefix \prefix{in}, the table shows an empty slot for singletons in comp
 
 
 
-\subsection{Experimental Study}\label{experiment data composition}
+\subsection{Experimental study}\label{experiment data composition}
 
 The tokens investigated in the experimental study were collected in two experiments conducted at the Cambridge University Phonetics Laboratory in October 2015 and October 2016. 
  As in the corpus study, complex words featuring the five affixes \prefix{un}, locative \prefix{in}, negative \prefix{in}, \prefix{dis} and \suffix{ly} were included  in the experimental study. One part of these words featured a phonological singleton at the morphological boundary, and one part  featured a phonological double at the morphological boundary. In addition to phonological doubles in complex words and singletons in complex words, two other structures were investigated in the experiment, orthographic doubles in simplex words and singletons in base words. The reason for not including these two structures in the corpus study is that not enough words with the pertinent structures were found in the Switchboard corpus. A statistical analysis of the tokens found in the corpus study was not reasonable.
@@ -238,7 +238,7 @@ In turn, one can find out whether the potential difference between singletons an
 
 
 %\clearpage
-\subsection{Overview of the Data Sets}
+\subsection{Overview of the data sets}
 
 %The table
 Table \ref{tbl: Overview categories in each study} gives an overview of the composition of the data sets in the two studies.
@@ -322,7 +322,7 @@ Table \ref{tbl:token distribution both studies} gives an overview of the type an
 %\newpage
 
 
-\section{Acoustic Analyses}\label{Acoustic Analysis}
+\section{Acoustic analyses}\label{Acoustic Analysis}
 %\enlargethispage{\baselineskip}
 After all sound files were extracted from the corpus and the experimental recordings, the data was segmented and phonetically transcribed using the software Praat (\citealt{Boersma.2014}). For each token, the segments of the affix in question, as well as the segments of the syllable immediately following or preceding the affix under investigation, were annotated. Figure \ref{fig:segmentation unneeded} displays an example. As can be seen in the figure, doubles were segmented as one segment. This is because in almost all cases no boundary between the two adjacent consonants was distinguishable. Only for some words in the experimental data a pause was uttered between the affix and the base, i.e. the two consonants were pronounced as two independent segments. These tokens were noted down and will be discussed in chapter \ref{Experimental Studies}.
 
@@ -460,7 +460,7 @@ After the segmentation process was completed, a script was used to measure and e
  For the comparison I used linear models in which the dependent variable was the duration of the consonant in question (e.g. /n/ for \prefix{un}prefixed words). I tested whether consonant duration varied significantly by annotator. The models revealed that the annotator did not have any effect on the duration of the consonant, i.e. the segmentation did not vary significantly across annotators.
 
 
-\section{Statistical Analyses}\label{stats}
+\section{Statistical analyses}\label{stats}
 
 In both studies similar statistical analyses were used to investigate morphological gemination. All statistical modeling was carried out using the software R (\citealt{RDevelopmentCoreTeam.2014}). 
 The main analyses in all studies consisted of the investigation of the duration of the consonant in question. 
@@ -518,7 +518,7 @@ The conducted decomposability analyses will be explained in detail in the pertin
 
 
 
-\section{Coding of the Variables} \label{General method annotation}
+\section{Coding of the variables} \label{General method annotation}
 
 
 % annotated factors which influence consonant duration --> same in corpus and experimental study (comparison)
@@ -545,7 +545,7 @@ Below I will describe all variables which were initially considered in all model
 
 First, I will describe the variables of interest. Then, I will turn to the noise variables, which can be categorized  into three different types: phonetic factors, phonological factors and lexical factors.  Finally, I will give an overview of which variables were included in which study. 
 
-\subsection{Variables of Interest} \label{variables of interest}
+\subsection{Variables of interest} \label{variables of interest}
 
 \textbf{Environment.}  The variable \textsc{Environment} was coded to test whether a word geminates. It codes the phonological and the morphological environment of the consonant(s) investigated in a particular word. The variable is based on the four different structures included in the two studies,  i.e. phonological doubles in complex words, orthographic doubles in simplex words, singletons in complex words and singletons in bases. This means that every level coded in the variable represents one of the four structures. In \sectref{General Method Data Sets}, the different structures and their environments were already introduced. %The environments differ from each other in four respects.
  
@@ -690,7 +690,7 @@ Firstly, as discussed in previous chapters, morphological gemination is often as
 Secondly, the variable \textsc{Affix} is of interest with regard to the segmentability hierarchies introduced in \sectref{comparison affixes}. To validate the hierarchies one must compare the different decomposability measures across affixes, i.e. one needs to code for the affix. The segmentability hierarchies are, if validated by the data, relevant for the affix-specific predictions made by psycholinguistic approaches. 
 
 
-\subsection{Noise Variables: Phonetic Factors}
+\subsection{Noise variables: Phonetic factors}
 
 \textbf{Consonant-specific factors.} Some phonetic factors are only relevant for specific consonants, i.e. for specific affixes. Hence, they are only coded for specific subsets. The variable \textsc{Voicing} is one of them. Voiceless /s/ is longer than voiced /z/ (cf. \citealt{Umeda.1977}). This must be accounted for in the \prefix{dis}data set. Therefore, the variable \textsc{Voicing} with the two levels \texttt{voiced} and \texttt{voiceless} was coded. The coding relied on the canonical pronunciation variant of the words found in the Longman pronunciation dictionary (\citealt{Wells.2008}). \textsc{Voicing} was only relevant for the corpus data since no \prefix{dis}prefixed words with voiced fricatives were included in the experimental study.
 
@@ -714,7 +714,7 @@ I computed the values for the variable \textsc{LocalSpeechRate} for each item by
 
 Apart from word duration, there are two other measures of length which could influence consonant duration --  the number of syllables and the number of segments in the word.  Early studies on Swedish and Dutch vowels have found that the more syllables a word consists of, the shorter a given vowel becomes (\citealt{Lindblom.1963}; \citealt{Nooteboom.1972}). \citet{Plag.2017} have shown the same effect for word-final  /s/ and /z/. To take these facts into account, I coded three types of phonological word length: the number of syllables in a word as noted in the lexical database CELEX (\citealt{Baayen.1995}), the actual number of syllables in the word as coded by the annotators, and the number of segments in the word as coded by the annotators. All three of these measurements are highly correlated. Furthermore, they are correlated with the variable \textsc{LocalSpeechRate}, which is computed by means of number of segments in the word. This means that much of the variation brought in by word length, i.e. number of syllables or segments in the word, is already accounted for by including \textsc{LocalSpeechRate}. Therefore, none of the word length measures was included as a separate variable. Measures of word length are, however, implicitly integrated in the model using the variable \textsc{LocalSpeechRate}.
 
-\subsection{Noise Variables: Phonological Factors}
+\subsection{Noise variables: Phonological factors}
 
 \textbf{Accentuation.} Previous research has revealed that words which bear sentence accent show less reduction and a longer duration than words which are not accented (e.g. \citealt{Sluijter.1996}; \citealt{Sugahara.2009}; \citealt{Bergmann.}). The  effect manifests itself in the duration of the individual segments of the word. For this study this translates into the prediction that in accented words the consonant in question will be pronounced with a longer duration than in unaccented words. 
 
@@ -752,7 +752,7 @@ Stress was thus coded with regard to the affix-adjacent syllable. For prefixes, 
 
 
 
-\subsection{Noise Variables: Lexical Factors}
+\subsection{Noise variables: Lexical factors}
 
 
 \textbf{Word Form Frequency.}					
@@ -760,7 +760,7 @@ Frequency has been shown to affect the duration of a word. More frequent words t
 The frequencies for the corpus study were extracted from COCA (\citealt{Davies.20082014}). The frequencies for the experimental study were taken from the BNC (\citealt{Davies.2004}).
 Preliminary inspection of the data revealed that the two frequency measurements highly correlate. This means that it essentially does not make a difference whether one tests the influence of word form frequency or lemma frequency on duration. Hence, only one was included in the models: \textsc{WordFormFrequency}. I log-transformed this variable before it entered the models.
 
-\subsection{Overview of Variables}
+\subsection{Overview of variables}
 		
 Table \ref{tbl: Overview variables in the two studies} summarizes which variables were included in the two studies. All variables are listed in the middle. They are divided into variables of interest and noise variables. On the left side of the table one can see which variables were included in the corpus study, on the right side which variables were included in the experimental study.  
 
