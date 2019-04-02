@@ -61,9 +61,9 @@ Some of the tokens sampled had to be removed after closer inspection of the soun
 						\midrule   	
 			Environment & Example & Number of Types & Number of Tokens\\
 			\midrule
-			n\#nV&\color[HTML]{3166FF}\textit{unnatural} & 6 & 23\\ 
-			n\#C&\color[HTML]{3166FF}\textit{untold} & 53 & 68\\ 
-			n\#V&\color[HTML]{3166FF}\textit{uneven} & 42 & 67\\
+			n\#nV&\color{lsMidBlue}\textit{unnatural} & 6 & 23\\ 
+			n\#C&\color{lsMidBlue}\textit{untold} & 53 & 68\\ 
+			n\#V&\color{lsMidBlue}\textit{uneven} & 42 & 67\\
 			\midrule
 			Total&  & 101 & 158\\ 
 			\midrule
@@ -74,8 +74,8 @@ Some of the tokens sampled had to be removed after closer inspection of the soun
 						\midrule   	
 			Environment & Example & Number of Types & Number of Tokens\\
 			\midrule
-			m\#mV&\color[HTML]{3166FF}\textit{immortal} & 16 & 89\\ 
-			m\#C&\color[HTML]{3166FF}\textit{impossible} & 67 & 67\\ 
+			m\#mV&\color{lsMidBlue}\textit{immortal} & 16 & 89\\ 
+			m\#C&\color{lsMidBlue}\textit{impossible} & 67 & 67\\ 
 			\midrule   
 			Total&  & 83 & 156\\ 
 			\midrule     	
@@ -86,9 +86,9 @@ Some of the tokens sampled had to be removed after closer inspection of the soun
 									\midrule   	
 			Environment & Example & Number of Types & Number of Tokens\\
 			\midrule
-			s\#sV&\color[HTML]{3166FF}\textit{dissatisfied} & 9 & 24\\ 
-			s\#C&\color[HTML]{3166FF}\textit{disgrace} & 21 & 45\\ 
-			s\#V&\color[HTML]{3166FF}\textit{disarm} & 34 & 59\\ 
+			s\#sV&\color{lsMidBlue}\textit{dissatisfied} & 9 & 24\\ 
+			s\#C&\color{lsMidBlue}\textit{disgrace} & 21 & 45\\ 
+			s\#V&\color{lsMidBlue}\textit{disarm} & 34 & 59\\ 
 			\midrule   	
 			Total&  & 64 & 128\\ 
 			\midrule   	
@@ -99,13 +99,13 @@ Some of the tokens sampled had to be removed after closer inspection of the soun
 						\midrule   	
 			Environment & Example & Number of Types & Number of Tokens\\
 			\midrule
-			non-syllabic l\#l &\color[HTML]{3166FF}\textit{really} & 29  & 33 \\ 
-			syllabic 	l\#l &\color[HTML]{3166FF}\textit{ment(a)lly} & 48 & 48 \\ 
-			\#l &\color[HTML]{3166FF}\textit{possibly} & 73 & 73\\ 
+			non-syllabic l\#l &\color{lsMidBlue}\textit{really} & 29  & 33 \\ 
+			syllabic 	l\#l &\color{lsMidBlue}\textit{ment(a)lly} & 48 & 48 \\ 
+			\#l &\color{lsMidBlue}\textit{possibly} & 73 & 73\\ 
 			\midrule   	
 			Total&  & 150  & 154\\ 
 		%	\midrule   	
-			\midrule
+			\lspbottomrule                                                                                
 		\end{tabular}
 		
 	
@@ -145,16 +145,15 @@ I computed all measures using the R package \texttt{psych} (\citealt{Revelle.201
 After excluding invalid ratings, based on the inspection of the ratings' distributions and the analysis of inter-rater reliability, the ratings proved to be valid and reliable. This is indicated by the consistency estimates which are summarized in \tabref{tbl:Overview consistency estimates for all ratings in corpus studys} for all ratings. For the item-total correlations, the minimum, the maximum, the mean and the median correlations for each rating are displayed. The table also shows the final number of raters for each rating, i.e. the number of raters after the exclusion of invalid raters. All in all, 23 raters were excluded.
 
 
-\begin{table*}[]
+\begin{table*}
 	\caption{Overview consistency estimates for all ratings in corpus study}
 	\label{tbl:Overview consistency estimates for all ratings in corpus studys}
 	
 		\resizebox{\textwidth}{!}{%
 			\begin{tabular} {lrrrrrrrr}
-				
-				
-				
-				\midrule
+			
+			
+			\lsptoprule
 				&number &			  &  & &&  &  & \\
 				&of raters& Cronbach's \textbf{$\alpha$ }&ICC1 & ICC 2& \multicolumn{4}{r}{item-total correlation}\\
 				\midrule
@@ -182,8 +181,8 @@ After excluding invalid ratings, based on the inspection of the ratings' distrib
 				Rating 4: & &&  & &&&&\\ 
 				\suffix{ly}& 20 &0.98 & 0.72 & 0.72 &0 .62 &1.0 &0.93 &0.99   \\  			
 				%			\midrule
-				\midrule
-			\end{tabular}
+				\lspbottomrule                                                                                
+		\end{tabular}
 		}
 	
 \end{table*}
@@ -217,8 +216,7 @@ The second aim was to test the validity of the segmentability hierarchies propos
 
 
 \subsection{The relation between decomposability measures} \label{The Relation between Decomposability Measures} 
-
-\vspace*{0.2cm}
+ 
 
 
 As discussed thoroughly in \sectref{decomposability}, we find different operationalizations of decomposability in the literature. It is yet unclear whether all of them are well-suited measures of the concept. In this study five variables are used as potential measures of decomposability: \textsc{SemanticTransparency}, \textsc{SemanticTransparen-cyRating}, \textsc{TypeOfBase}, log\textsc{Re-lativeFrequency} and \textsc{LSAScore}.
@@ -241,14 +239,14 @@ The first cluster analysis conducted investigated all types of the corpus study,
 
 
  
- \begin{table*}[]
+ \begin{table*}
 
 	\caption{Correlation matrix for decomposability measures in corpus study}
 	\label{tab: Correlation matrix for all decomposability measures in corpus study}
 	
 	\resizebox{\textwidth}{!}{%
 \begin{tabular}{lrrrrr}
-\midrule
+\lsptoprule
  &\textsc{numSemantic-}  & log\textsc{Relative-} &  \textsc{SemanticTrans-}      &\textsc{numType-} &\textsc{}\\
   &\textsc{Transparency}  & \textsc{Frequency} &  \textsc{parencyRating}      &\textsc{OfBase} &\textsc{LSAScore}\\
  
@@ -259,11 +257,8 @@ The first cluster analysis conducted investigated all types of the corpus study,
  \textsc{Sem.Transp.Rating}                                    &    0.70             &     0.10    &1.00   & & \\
  \textsc{numTypeOfBase}                   &            0.65      &           0.08 &   0.70  & 1.00  &    \\
  \textsc{LSAScore}                             &       0.11             &     0.03  &  0.08   & 0.05     & 1.00\\
- \midrule
-
-
-
-\end{tabular}
+ \lspbottomrule                                                                                
+		\end{tabular}
 }
 
  \end{table*}
@@ -281,8 +276,8 @@ The first cluster analysis conducted investigated all types of the corpus study,
       That log\textsc{RelativeFrequency} and \textsc{LSAScore} are different from the other three decomposability variables is also shown by the high position of the first two splits in the figure.
       
       
-     \begin{figure*} [t!]
-    	\centering
+     \begin{figure*}
+    	
     	\includegraphics[scale=0.5]{images/Corpus/clusterAnalysisDecomposabilityCorpusAllTypes.png}
     	\caption{ Dendrogram of the five decomposability measures for all types in the corpus study}
     	\label{fig:cluster corpus all affixes}
@@ -304,8 +299,8 @@ The first cluster analysis conducted investigated all types of the corpus study,
  For \prefix{in} and \prefix{dis}, all variables showed enough variation to conduct cluster analyses. The results of the analyses for the two prefixes are displayed in the dendrograms in \figref{fig:cluster corpus dis and in}. 
  For both prefixes, the variables \textsc{numSemanticTransparency}, \textsc{SemanticTransparency-Rating} and \textsc{numTypeOfBase} cluster together in the lower part of the figure. This means that the correlations between the three variables are quite high. \textsc{LSAScore} and log\textsc{RelativeFrequency}, on the other hand, do not correlate to a high degree with any other variable. This resembles the results of the first cluster analysis.
 
-\begin{figure*} []
-	\centering
+\begin{figure*}  
+	
 	\includegraphics[scale=0.5]{images/Corpus/clusterAnalysisDecomposabilityCorpusDisAndIn.png}
 	\caption{ Dendrogram of the five decomposability measures for \prefix{in} and \prefix{dis}prefixed words in the corpus study}
 	\label{fig:cluster corpus dis and in}
@@ -331,12 +326,12 @@ Two of the theoretical predictions about gemination, i.e. the affix-specific mor
 The Semantic Segmentability Hierarchy is mainly based on a qualitative analysis of the affixes' semantics (see discussion on semantics of the affixes in \sectref{comparison affixes}). Testing its validity by a quantitative analysis, such as the one applied here, is therefore quite challenging.
  The validity of the Non-Semantic Segmentability Hierarchy can, however, well be tested by checking whether the hierarchy is mirrored in the distribution of the decomposability measures in this data set.
  
- \clearpage
+ 
 
 
 
-\begin{figure*}[]
-	\centering	
+\begin{figure*}
+		
 	
 \begin{tabularx}{\linewidth}{lll}
 	
@@ -377,19 +372,19 @@ First, I looked at the distribution of the variable \textsc{SemanticTransparency
 	
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular} {lrrrrrrrrrr}
-			\midrule
+			
+			
+			\lsptoprule
 			\textsc{Semantic}& & & &&   \\
 			\textsc{Transparency }&\multicolumn{2}{c}{\prefix{in}\textsubscript{\textsc{Loc}}   }&\multicolumn{2}{c}  {\textit{dis-}} &   \multicolumn{2}{c} {\prefix{in}\textsubscript{\textsc{Neg}}   } &\multicolumn{2}{c} {\prefix{un} }& \multicolumn{2}{c} {\suffix{ly}  }  \\
 			\midrule
 			
 			opaque              &     42 &(78\%) &   28 &(45\%)    &  7& (24\%) & 0 &(0\%)   & 0 & (0\%)      \\
 			transparent  &  12& (22\%)  &   34& (55\%) &  22 &(76\%)  & 101 &(100\%)  & 150  &(100\%) \\
-			\midrule
-			
-			
+			\lspbottomrule                                                                                
 		\end{tabular}
 	}
-\vspace*{-0.5cm}
+
 	
 \end{table*}
 
@@ -413,7 +408,9 @@ The two affixes \prefix{un} and \suffix{ly} were rated to be the easiest to segm
 	
 	\resizebox{\textwidth}{!}{%
 				\begin{tabular} {lrrrrrrrrrr}
-			\midrule
+			
+			
+			\lsptoprule
 			\textsc{Semantic}& & & &&   \\
 			\textsc{TransparencyRating }&\multicolumn{2}{c}{\prefix{in}\textsubscript{\textsc{Loc}}   }&\multicolumn{2}{c}  {\textit{dis-}} &   \multicolumn{2}{c} {\prefix{in}\textsubscript{\textsc{Neg}}   } & \multicolumn{2}{c} {\suffix{ly}  } &\multicolumn{2}{c} {\prefix{un} }  \\
 			\midrule
@@ -422,9 +419,7 @@ The two affixes \prefix{un} and \suffix{ly} were rated to be the easiest to segm
 			2                                                            &  13 & (24\%) &   4 & (6\%) &  1 & (3\%)&   4 & (2\%)& 0 & (0\%)  \\
 			3															 &  25 & (46\%) &   14 &  (23\%)&  4&  (14\%) & 1 & (1\%) &0 & (0\%)    \\
 			4 -  least decomposable             &  14&  (26\%) &   4 & (6\%) &  4 & (14\%) & 0 & (0\%) & 0 & (0\%)   \\
-			\midrule
-			%\\
-			
+			\lspbottomrule                                                                                
 		\end{tabular}
 }
 
@@ -448,16 +443,16 @@ All in all, the rating clearly shows that locative \prefix{in} is the least segm
 	
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular} {lrrrrrrrrrr}
-			\midrule
+			
+			
+			\lsptoprule
 			\textsc{TypeOf}& & & &&   \\
 			\textsc{Base }&\multicolumn{2}{c}{\prefix{in}\textsubscript{\textsc{Loc}}   }&\multicolumn{2}{c}  {\textit{dis-}} &   \multicolumn{2}{c} {\prefix{in}\textsubscript{\textsc{Neg}}   } &\multicolumn{2}{c} {\prefix{un} }& \multicolumn{2}{c} {\suffix{ly}  }  \\
 			\midrule
 			
 			bound root            &     44 &  (81\%) &   15 &  (24\%)  &  7 &  (24\%)  & 1 &  (1\%)   & 1&  (1\%)        \\
 			word          & 10 &  (19\%) &  47 &  (76\%) &  22 &  (76\%)   & 100&   (99\%)   & 149&   (99\%)  \\
-			\midrule
-			%\\
-
+			\lspbottomrule                                                                                
 		\end{tabular}
 	}
 
@@ -470,8 +465,8 @@ Turning to the gradient measures of decomposability, \figref{fig: corpus RelFreq
 for the five affixes using boxplots. The logarithmized relative frequency is displayed on the x-axis of the plot.  Each of the five boxes in the plot represents 50\% of the types of one affix.  The black dot in each box marks the median relative frequency for each affix. For example, the graph shows that 50\% of the \suffix{ly}-words have a logarithmized relative frequency between $-2.191$ and $-0.058$. It also shows that half of the \suffix{ly}-words have a relative frequency above $-1.415$, and half have a relative frequency below $-1.415$. All significant differences are indicated in the plot.
 
 
-\begin{figure*} []
-	\centering
+\begin{figure*}  
+	
 	\includegraphics[scale=0.5]{images/Corpus/corpusComparisonRelFreq2.png}
 	\caption{ Comparison of the relative frequency of the five affixes }
 	\label{fig: corpus RelFreq comparison}
@@ -498,26 +493,25 @@ Pairwise comparisons revealed that \suffix{ly} has significantly more `more deco
 To sum up the comparisons of the affixes' relative frequency, \prefix{un} and \suffix{ly} are the most segmentable affixes, locative \prefix{in} is the least segmentable affix. The affixes \prefix{dis} and negative \prefix{in} seem to be in the middle of the scale. However, in both analyses (gradient and categorical relative frequency), only few contrasts proved to be significant.
 
 
-\clearpage
 
 
 
-\begin{table*}[]
+
+\begin{table*}
 	
 	\caption{Categorical relative frequency by affix }
 	\label{tbl:Corpus Categorical RelFreq}
 	
 		\resizebox{\textwidth}{!}{%
 			\begin{tabular} {lrrrrrrrrrr}
-				\midrule
+				\lsptoprule
 				\textsc{Cat. Relative}& & & &&   \\
 				\textsc{Frequency }&\multicolumn{2}{c}{\prefix{in}\textsubscript{\textsc{Loc}}   }&\multicolumn{2}{c}  {\textit{dis-}} &   \multicolumn{2}{c} {\prefix{in}\textsubscript{\textsc{Neg}}   } &\multicolumn{2}{c} {\prefix{un} }& \multicolumn{2}{c} {\suffix{ly}  }  \\
 				\midrule
 				less    decomposable              &     38 &(70\%) &   30 &(48\%)   &  9 &(31\%)  & 35& (35\%)   &35& (23\%)        \\
 				more decomposable &  16 &(30\%) &   32& (52\%)  &  20 &(69\%) &66& (65\%) & 115& (77\%) \\
-				\midrule
-				
-			\end{tabular}
+				\lspbottomrule                                                                                
+		\end{tabular}
 		}
 	
 \end{table*}
@@ -525,8 +519,8 @@ To sum up the comparisons of the affixes' relative frequency, \prefix{un} and \s
 
 
 
-\begin{figure*} [b!]
-	\centering
+\begin{figure*}
+	
 	\includegraphics[scale=0.5]{images/Corpus/corpusComparisonLSAScores2.png}
 	\caption{ Comparison of LSA score of the five affixes }
 	\label{fig: corpus LSA comparison}
@@ -554,7 +548,7 @@ After having looked at each decomposability measure individually, let us now tak
 	
 			\resizebox{\textwidth}{!}{%
 		\begin{tabular} {lrcrcrcrcr}
-			\midrule
+			\lsptoprule
 			\textbf{Decomposability measure}& & &&&&& &&\\
 			\midrule
 			\textsc{SemanticTransparency}  &\{\prefix{un} &, &\suffix{ly}\}  &>&   \prefix{in}\textsubscript{\textsc{Neg}}  &>&  \prefix{dis}  &>&\prefix{in}\textsubscript{\textsc{Loc}}  \\		
@@ -569,8 +563,7 @@ After having looked at each decomposability measure individually, let us now tak
 			
 			\textsc{LSAScore}&\suffix{ly} &> &  \prefix{un}  &> &   \prefix{in}\textsubscript{\textsc{Neg}}&> &  \prefix{dis}     &> &\prefix{in}\textsubscript{\textsc{Loc}}  \\				
 			
-			\midrule
-						
+			\lspbottomrule                                                                                
 		\end{tabular}
 	}
 	
@@ -647,28 +640,28 @@ The plots of the regression models were generated with the \texttt{visreg packag
 		
 		
 		\begin{subfigure}
-			\centering
+			
 			\includegraphics[scale=.55]{images/Corpus/boxUn.png}
 			%	\caption{1a}
 			%	\label{fig:sfig1}
 		\end{subfigure}%
 		~
 		\begin{subfigure}
-			\centering
+			
 			\includegraphics[scale=.55]{images/Corpus/boxIn.png}
 			%	\caption{1b}
 			%	\label{fig:sfig2}
 		\end{subfigure}
 		
 		\begin{subfigure}
-			\centering
+			
 			\includegraphics[scale=.55]{images/Corpus/boxDis.png}
 			%	\caption{1b}
 			%	\label{fig:sfig2}
 		\end{subfigure}
 		~
 		\begin{subfigure}
-			\centering
+			
 			\includegraphics[scale=.55]{images/Corpus/boxLy.png}
 			%	\caption{1b}
 			%	\label{fig:sfig2}
@@ -697,19 +690,19 @@ The \suffix{ly}-data set does not show a bimodal distribution, i.e. there is a b
 
 
   
-  \begin{table*}[t!]
+  \begin{table*}
   	\caption{Duration of consonant(s) in milliseconds per environment for all affixes}
   	\label{tbl:Corpus raw duration}
   	
   		\begin{tabular} {lllll}
-  			
+  			\lsptoprule
   			\textbf{un-}\\
   			%\\
   			Environment & Example & Mean & Median& Standard Deviation\\
   			\midrule			
-  			n\#nV&\color[HTML]{3166FF}\textit{unnatural} & 100 & 102 & 21\\ 
-  			n\#C&\color[HTML]{3166FF}\textit{untold} & 64 & 60 & 24\\ 
-  			n\#V&\color[HTML]{3166FF}\textit{uneven} & 45 & 40 & 18\\
+  			n\#nV&\color{lsMidBlue}\textit{unnatural} & 100 & 102 & 21\\ 
+  			n\#C&\color{lsMidBlue}\textit{untold} & 64 & 60 & 24\\ 
+  			n\#V&\color{lsMidBlue}\textit{uneven} & 45 & 40 & 18\\
   			\midrule   	
   			Overall &  & 60 & 54 & 28\\ 
   			\midrule
@@ -720,8 +713,8 @@ The \suffix{ly}-data set does not show a bimodal distribution, i.e. there is a b
   			
   			Environment & Example & Mean & Median& Standard Deviation\\
   			\midrule			
-  			m\#mV&\color[HTML]{3166FF}\textit{immortal} & 87 & 81 & 27\\   	
-  			m\#C&\color[HTML]{3166FF}\textit{impossible} & 61 & 61 & 19\\ 
+  			m\#mV&\color{lsMidBlue}\textit{immortal} & 87 & 81 & 27\\   	
+  			m\#C&\color{lsMidBlue}\textit{impossible} & 61 & 61 & 19\\ 
   			\midrule   	
   			Overall &  & 76 & 74 & 27\\ 
   			\midrule   
@@ -731,9 +724,9 @@ The \suffix{ly}-data set does not show a bimodal distribution, i.e. there is a b
   			%\\
   			Environment & Example & Mean & Median& Standard Deviation\\
   			\midrule			
-  			s\#sV&\color[HTML]{3166FF}\textit{dissatisfied} & 127 & 130  &35 \\ 
-  			s\#C&\color[HTML]{3166FF}\textit{disgrace} & 100 & 100& 29\\ 
-  			s\#V&\color[HTML]{3166FF}\textit{disarm} &95 & 96 & 22 \\ 
+  			s\#sV&\color{lsMidBlue}\textit{dissatisfied} & 127 & 130  &35 \\ 
+  			s\#C&\color{lsMidBlue}\textit{disgrace} & 100 & 100& 29\\ 
+  			s\#V&\color{lsMidBlue}\textit{disarm} &95 & 96 & 22 \\ 
   			\midrule   	
   			Overall &   &103   & 102  & 30  \\ 
   			\midrule   	
@@ -744,14 +737,13 @@ The \suffix{ly}-data set does not show a bimodal distribution, i.e. there is a b
   			\midrule
   			Environment & Example & Mean & Median& Standard Deviation\\
   			\midrule			
-  			l\#l&\color[HTML]{3166FF}\textit{really} & 50  & 50 & 23 \\ 
-  			syllabic l\#l&\color[HTML]{3166FF}\textit{ment(a)lly} &41 & 37  & 21\\ 
-  			\#l&\color[HTML]{3166FF}\textit{possibly} & 42& 39& 21\\ 
+  			l\#l&\color{lsMidBlue}\textit{really} & 50  & 50 & 23 \\ 
+  			syllabic l\#l&\color{lsMidBlue}\textit{ment(a)lly} &41 & 37  & 21\\ 
+  			\#l&\color{lsMidBlue}\textit{possibly} & 42& 39& 21\\ 
   			\midrule   	
   			Overall &  &43  &41 &22\\ 
-  			\midrule   		
-  		%	\midrule
-  		\end{tabular}
+  			\lspbottomrule                                                                                
+		\end{tabular}
   	
   \end{table*}
   
@@ -777,14 +769,16 @@ For \prefix{dis}, the comparison of the means also yields significant contrasts 
   	\label{tbl:Tukey un}
   	
   		\begin{tabular} {lrrrr}
-  			\midrule
+			
+			
+			\lsptoprule
   			& Estimate & Std. Error & $t$-value  & Pr($>$$|$$t$$|$)    \\
   			\midrule
   			n\#C - n\#nV  &-35  &  5 & -6.903 & $<$ 0.001\\
   			n\#V - n\#nV & -56 &  5 & -10.798 & $<$ 0.001\\
   			n\#C - n\#V  & -20 & 4 & -5.487 & $<$ 0.001 \\
-  			\midrule   	
-  		\end{tabular}
+  			\lspbottomrule                                                                                
+		\end{tabular}
   	
   \end{table*}
   
@@ -795,15 +789,16 @@ For \prefix{dis}, the comparison of the means also yields significant contrasts 
   	\label{tbl:Tukey dis}
   	
   		\begin{tabular} {lrrrr}
-  			\midrule
+			
+			
+			\lsptoprule
   			& Estimate & Std. Error & $t$-value  & Pr($>$$|$$t$$|$)    \\
   			\midrule
   			s\#C - s\#sV  &  - 28 &  7  & -6.903 & 0.001\\
   			s\#V - s\#sV & -32  &  7  & -10.798 &$<$ 0.001\\
   			s\#C - s\#V    &  {5}       &  5  &  -0.858  &  0.666  \\
-  			  			\midrule   	
-
-  		\end{tabular}
+  			  			\lspbottomrule                                                                                
+		\end{tabular}
 
   	
   \end{table*}
@@ -832,7 +827,9 @@ None of the interactions was significant, and only two significant predictors re
 		
 		
 		\begin{tabular}{lrrrr}
-			\midrule
+			
+			
+			\lsptoprule
 			& Estimate & Std. Error & t-value & p-value  \\ 
 			\midrule
 			Intercept                           &   0.580 &  0.015  & 38.502 &  $<$ 0.001\\
@@ -841,7 +838,8 @@ None of the interactions was significant, and only two significant predictors re
 			\textsc{LocalSpeechRate} &                 -0.008  & 0.001 &  -6.814 & $<$ 0.001\\
 			
 			\midrule\\
-			Adjusted R-squared: 0.562  
+			Adjusted R-squared: 0.562  \\
+			\lspbottomrule
 		\end{tabular}
 
 	
@@ -854,8 +852,8 @@ None of the interactions was significant, and only two significant predictors re
 
 
 
-\begin{figure*} [t!]
-	\centering
+\begin{figure*}
+	
 
 	\includegraphics [scale=0.4]{images/Corpus/unModelSpeechRate.png}
 	\caption{ Effect of local speech rate on consonant duration in \prefix{un}data set}
@@ -872,15 +870,15 @@ Let us now turn to our variable of interest, \textsc{Environment}. Its effect is
 
 
 
-\begin{figure} []
-	\centering
+\begin{figure}  
+	
 	\includegraphics [scale=0.4] {images/Corpus/unModelNumNasal.png}
 	\caption{Effect of environment on consonant duration in \prefix{un}data set}
 	\label{fig:NumNasal un}
 \end{figure}
 
 
-\clearpage
+
 
 The predicted mean duration for double nasals is 90~ms. For words with the \texttt{n\#C} environment the nasal is predicted to be 63~ms long, and for words having the \texttt{n\#V} environment it is predicted to be 43~ms long. If we compare the two environments with a following vowel (and thus hold the type of following segment constant), the model predicts double nasals to be even a bit longer than twice the duration of the average single nasal in this environment (90~ms as against 43~ms). This result clearly speaks in favor of gemination with \prefix{un}.
 
@@ -910,7 +908,9 @@ The model predicting relative consonant duration with \prefix{un} was fitted sim
 		
 	\resizebox{\textwidth}{!}{%		
 		\begin{tabular}{lrrrr}
-			\midrule
+			
+			
+			\lsptoprule
 			& Estimate & Std. Error & t-value & p-value  \\ 
 			\midrule
 			
@@ -921,7 +921,8 @@ The model predicting relative consonant duration with \prefix{un} was fitted sim
 			\textsc{Environment}-\texttt{n\#V}    &-0.127  & 0.015 &  -8.527 &   $<$ 0.001\\ 
 			
 			\midrule\\
-			Adjusted R-squared:  0.327 
+			Adjusted R-squared:  0.327 \\
+			\lspbottomrule
 		\end{tabular}
 }		
 	
@@ -953,7 +954,7 @@ To avoid collinearity, the effects of the decomposability variables were tested 
 The final model explains about 50\% of the variance in the data and includes four variables with a significant effect on consonant duration, \textsc{Environment}, \textsc{LocalSpeechRate}, \textsc{BaseInitialStress} and \textsc{Affix}. None of the tested interactions proved to be significant. 
 An overview of the model coefficients is given in \tabref{tbl: summary model2}.% \pagebreak
 
-\clearpage
+
 
 \begin{table*}
 
@@ -962,7 +963,9 @@ An overview of the model coefficients is given in \tabref{tbl: summary model2}.%
 	
 	\resizebox{\textwidth}{!}{%		
 		\begin{tabular}{p{8cm}rrrr}
-			\midrule
+			
+			
+			\lsptoprule
 			& Estimate & Std. Error & t-value & p-value  \\ 
 			\midrule
 			Intercept                              &  0.368 &    0.015 & 24.931 & $<$ 0.001\\
@@ -971,20 +974,21 @@ An overview of the model coefficients is given in \tabref{tbl: summary model2}.%
 			\textsc{BaseInitialStress}-\texttt{unstressed}    & -0.038 &  0.008& -4.826&  $<$ 0.001\\ 
 			\textsc{Affix}-\texttt{inNeg}          & 0.016  & 0.007 & 2.121 &   0.036\\ 
 			\midrule\\
-			Adjusted R-squared: $0.504$
+			Adjusted R-squared: $0.504$\\
+			\lspbottomrule
 		\end{tabular}
  }	
 	
-\vspace*{-0.4cm}
+
 \end{table*}
 
 
 \figref{fig:covariates in} displays the effects of the two noise variables in the model. The left panel shows the effect of  \textsc{LocalSpeechRate}. This effect is as expected: 
 the higher the speech rate, the shorter the nasal. The right panel shows the effect of \textsc{BaseInitialStress}. With an estimated mean duration of 74~ms, the consonant is 21~ms shorter before an unstressed base-initial syllable than before a stressed base-initial syllable (95~ms). This result is expected, too. As mentioned in \sectref{General method annotation}, \cite{Umeda.1977} also found that nasals before unstressed vowels are shorter than nasals before stressed vowels.
 
-\begin{figure*} [b!]
-	\centering
-	\vspace*{-0.7cm}
+\begin{figure*}
+	
+	
 	\includegraphics  [scale=0.8] {images/Corpus/inModelcov.png}
 	\caption{Effects of local speech rate and base initial-stress on consonant duration in \prefix{in}data set}
 	\label{fig:covariates in}
@@ -998,8 +1002,8 @@ Let us turn to the variables of interest. The left panel of \figref{fig:inModel}
 
 
 
-\begin{figure*} [t!]
-	\centering
+\begin{figure*}
+	
 	\includegraphics [scale=0.8]  {images/Corpus/inModel.png}
 	\caption{Effects of environment and affix on consonant duration in \prefix{in}data set}
 	\label{fig:inModel}
@@ -1029,7 +1033,7 @@ The principal component analysis was fitted with the variables log\textsc{Relati
 		\begin{tabular}{lrrrrr}
 			
 			
-			\midrule
+			\lsptoprule
 			
 			
 			\multicolumn{6}{l}{\textbf{Composition of principal components}}\\
@@ -1048,14 +1052,12 @@ The principal component analysis was fitted with the variables log\textsc{Relati
 			&PC1&          PC2 &       PC3       & PC4 & PC5  \\
 			\midrule
 			Proportion of Variance &0.551& 0.264&  0.086& 0.064 &0.035\\
-			\midrule
-			
-			
+			\lspbottomrule                                                                                
 		\end{tabular}
 }
 	
 
-\vspace*{-0.4cm}
+
 \end{table}
 
 
@@ -1068,8 +1070,8 @@ Both components were included as predictor variables in the linear model.
 The linear model with the principal components was fitted similarly to the model with the individual decomposability measures. After simplification, the model showed very similar effects as the model with the individual decomposability measures (see \hyperref[Appendix D: model summaries corpus]{appendix D} for model summary). The effects of \textsc{Environment}, \textsc{LocalSpeechRate} and \textsc{BaseInitialStress} are identical. Instead of the variable \textsc{Affix}, this model shows an effect of \textsc{PC2}. The effect is shown in \figref{fig:PC2 in Corpus}. The higher the value of \textsc{PC2}, the longer the duration of the nasal. As explained above, \textsc{PC2} is dominated by the variable \textsc{Affix}. A higher \textsc{PC2}-value indicates negative \prefix{in}, a lower \textsc{PC2}-value indicates locative \prefix{in}. On can thus interpret the effect of \textsc{PC2} as being an effect of \textsc{Affix}. Negative \prefix{in} is longer than locative \prefix{in}. The principal component model hence shows the same effects as the model with the individual decomposability measures.
 
 
-\begin{figure*} [h!]
-	\centering
+\begin{figure*}
+	
 	\includegraphics [scale=0.4] {images/Corpus/imPCAbsPC2.png}
 	\caption{Effect of PC2 on consonant duration in \prefix{in}data set}
 	\label{fig:PC2 in Corpus}
@@ -1099,7 +1101,9 @@ The summary of the final model is given in \tabref{tbl: summary model rel du in 
 			\resizebox{\textwidth}{!}{%		
 		
 		\begin{tabular}{lrrrr}
-			\midrule
+			
+			
+			\lsptoprule
 			& Estimate & Std. Error & t-value & p-value  \\ 
 			\midrule
 			
@@ -1113,7 +1117,8 @@ The summary of the final model is given in \tabref{tbl: summary model rel du in 
 			\textsc{BaseInitialStress}-\texttt{unstressed}    & 0.066 &  0.008 & 7.876 & $< $0.001\\ 
 			
 			\midrule\\
-			Adjusted R-squared: 0.422 
+			Adjusted R-squared: 0.422 \\
+			\lspbottomrule
 		\end{tabular}
 }
 	
@@ -1162,7 +1167,7 @@ The final model explains 49\% of the variance and features five variables, \text
 
 
 
-\begin{table*}[b!]
+\begin{table*}
 	\caption{ Summary of linear model for variables predicting the normalized duration of the nasal in
 		\prefix{un} and \prefix{in}prefixed words}
 	\label{tbl:corpus summary model un, in}
@@ -1170,7 +1175,9 @@ The final model explains 49\% of the variance and features five variables, \text
 		
 			\resizebox{\textwidth}{!}{%				
 		\begin{tabular}{lrrrr}
-			\midrule
+			
+			
+			\lsptoprule
 			& Estimate & Std. Error & t-value & p-value  \\ 
 			\midrule
 			
@@ -1186,7 +1193,8 @@ The final model explains 49\% of the variance and features five variables, \text
 			\textsc{Affix}-\texttt{inLoc}   & -0.469  & 0.133 & -3.521 &   0.001\\ 
 			\textsc{Affix}-\texttt{un}   & 0.343   & 0.123 & 2.794 &   0.006\\ 			
 			\midrule\\
-			Adjusted R-squared: 0.49  
+			Adjusted R-squared: 0.49  \\
+			\lspbottomrule
 		\end{tabular}
 }
 	
@@ -1194,9 +1202,9 @@ The final model explains 49\% of the variance and features five variables, \text
 
 
 
-\begin{figure*} [b!]
-	\vspace*{-0.5cm}
-	\centering
+\begin{figure*}
+	
+	
 	\includegraphics[scale=0.8] {images/Corpus/unInModel.png}
 	\caption{Effects of  affix on consonant duration for words prefixed with \prefix{un} and \prefix{in}}
 	\label{fig:inUnModel}
@@ -1227,7 +1235,9 @@ An overview of the final model, i.e. the model after simplification, is given in
 	
 					\resizebox{\textwidth}{!}{%		
 		\begin{tabular}{lrrrr}
-			\midrule
+			
+			
+			\lsptoprule
 		 	                                     & Estimate & Std. Error & t-value & p-value  \\ 
 			\midrule
 			 Intercept                             & 0.644 &    0.015 & 43.659& $<$ 0.001\\	
@@ -1247,9 +1257,10 @@ An overview of the final model, i.e. the model after simplification, is given in
 			\textsc{BaseInitialStress}-\texttt{unstressed}  & 0.048  &  0.023  & 2.068  & 0.041\\ 
 			
 			\textsc{Environment}-\texttt{s\#V}: &&&&\\
-			\textsc{BaseInitialStress}-\texttt{unstressed}  & \color[HTML]{9B9B9B}{0.017} & \color[HTML]{9B9B9B} 0.021 &\color[HTML]{9B9B9B}0.782  &\color[HTML]{9B9B9B} 0.436 \\ 
+			\textsc{BaseInitialStress}-\texttt{unstressed}  & \color{lsLightGray}{0.017} & \color{lsLightGray} 0.021 &\color{lsLightGray}0.782  &\color{lsLightGray} 0.436 \\ 
 			\midrule\\
-			Adjusted R-squared: 0.333 
+			Adjusted R-squared: 0.333 \\
+			\lspbottomrule
 		\end{tabular}
 }
 	
@@ -1260,8 +1271,8 @@ An overview of the final model, i.e. the model after simplification, is given in
 
 
 
-\begin{figure*} [t!]
-	\centering
+\begin{figure*}
+	
 	\includegraphics[scale=.8] {images/Corpus/disModelcov.png}
 	\caption{ Effect of local speech rate and voicing on consonant duration in \prefix{dis}data set}
 	\label{fig:corpus covariates dis}
@@ -1274,9 +1285,9 @@ An overview of the final model, i.e. the model after simplification, is given in
 The right panel of the figure shows the effect of \textsc{Voicing}. Voiced fricatives are significantly shorter than voiceless fricatives. For doubles this difference is predicted to be 47~ms, for singletons voiced fricatives are predicted to be 36~ms shorter than voiceless fricatives. 
 With regard to \textsc{Voicing}, it is important to note that the distribution of voiced items in the data set is unbalanced. All voiced \prefix{dis}prefixed words are semantically opaque, followed by a vowel and have a stressed base-initial syllable. This skewed distribution might have influenced the final model, i.e. it might have skewed the effects of the affected variables. This problem will be discussed in further detail below.
 
-\begin{figure*} [b!]
-\vspace*{-0.7cm}
-	\centering
+\begin{figure*}
+
+	
 	\includegraphics [scale=0.5]{images/Corpus/disModelTransitionTypeByStress.png}
 	\caption{Effect of environment by base-initial stress on consonant duration in \prefix{dis}data set}
 	\label{fig:corpus main effect 1 dis}
@@ -1287,7 +1298,7 @@ The interaction between \textsc{Environment} and \textsc{BaseInitialStress} is d
 The difference in duration between the two singleton levels is marginally significant (p-value: $0.066$). The fricative before a consonant is predicted to be 15ms shorter than the fricative before a vowel.  There is no difference between the three environments for words with an unstressed base-initial syllable, i.e. doubles are of the same duration as singletons, and the two singleton levels are  also of the same duration. 
 
 
-%\clearpage
+%
 
 
 
@@ -1304,7 +1315,7 @@ is related to the distribution of the variable \textsc{Voicing}.
   With regard to the final model, the interaction between \textsc{Environment} and \textsc{BaseInitialStress} might be affected by this problem.
   Only two of the six pertinent categories feature voiced items, i.e. only words with base-initial stress and a double consonant and words with base-initial stress and a singleton followed by a vowel can be voiced. All other categories only feature voiceless items.
   
-  \clearpage
+  
   
   To test whether the effects of \textsc{Environment} and \textsc{BaseInitialSyllable} are affected by the distribution of voiced items in the data set, and to also test the effect of \textsc{SemanticTransparency} without the possible harming influence of the variable \textsc{Voicing}, an additional model was fitted to the \prefix{dis}data set. In this model only voiceless \prefix{dis}prefixed words were included. The model included 104 observations, i.e. 24 voiced \prefix{dis}prefixed words were excluded. 
   
@@ -1312,13 +1323,15 @@ is related to the distribution of the variable \textsc{Voicing}.
 
 
  
-\begin{table*}[b!]
+\begin{table*}
 	\caption{ Summary of linear model for variables predicting the Box-Cox-transformed duration of [s] in \prefix{dis}prefixed words with voiceless /s/}
 	\label{tbl: summary model6}
 	
 					\resizebox{\textwidth}{!}{%		
 		\begin{tabular}{lrrrr}
-			\midrule
+			
+			
+			\lsptoprule
 			& Estimate & Std. Error & t-value & p-value  \\ 
 			\midrule
 			Intercept                             &0.716 &    0.017 &41.928 & $<$ 0.001\\	
@@ -1328,7 +1341,7 @@ is related to the distribution of the variable \textsc{Voicing}.
 			\textsc{Environment}-\texttt{s\#V}   & -0.052 &   0.011 & -4.918 &$<$ 0.001 \\ 
 			
 			\textsc{SemanticTransparency}-\texttt{transparent}  &
-			\color[HTML]{9B9B9B}{-0.004 }& \color[HTML]{9B9B9B} 0.008 & \color[HTML]{9B9B9B}-0.523   &  \color[HTML]{9B9B9B}0.602  \\ 
+			\color{lsLightGray}{-0.004 }& \color{lsLightGray} 0.008 & \color{lsLightGray}-0.523   &  \color{lsLightGray}0.602  \\ 
 			
 			\textsc{SpeechRate}  				  &-0.005 & 0.001 & -5.088   &$<$ 0.001 \\ 
 			
@@ -1339,6 +1352,7 @@ is related to the distribution of the variable \textsc{Voicing}.
 			\textsc{BaseInitialStress} - \texttt{unstressed}  & 0.052 &  0.020 & 2.646 & 0.010\\ 
 			\midrule\\
 			Adjusted R-squared: 0.375\\
+			\lspbottomrule
 		\end{tabular}
 }
 	
@@ -1350,17 +1364,16 @@ As in the model with all \prefix{dis}prefixed words, \textsc{LocalSpeechRate} ha
 \figref{fig:corpus main effect 1 dis without voiced items} shows the effect of  \textsc{Environment}. One clearly sees that the double is predicted to be longer than both singleton consonants, irrespective of base-initial stress. Furthermore, the durational difference between the two singleton levels is not significant in this model. One can hence assume that the marginally significant difference between the two singleton levels in the complete model was caused by the uneven distribution of voiced items in the complete \prefix{dis}data set. 
 
 
-\begin{figure*} [t!]
-	\centering
+\begin{figure*}
+	
 	\includegraphics [scale=0.4]{images/Corpus/disModelWithoutVoicedSoundsEnvironment.png}
 	\caption{ Effects of environment on consonant duration in voiceless \prefix{dis}data set}
-	\label{fig:corpus main effect 1 dis without voiced items}
-		\vspace*{0.8cm}
+	\label{fig:corpus main effect 1 dis without voiced items} 
 \end{figure*}
 
 
-\begin{figure*} [b!]
-	\centering
+\begin{figure*}
+	
 
 	\includegraphics [scale=0.5]{images/Corpus/disModelWithoutVoicedSoundsSemanticTransTypeByStress.png}
 	\caption{Effects of semantic transparency by  base-initial stress on consonant duration in voiceless \prefix{dis}data set}
@@ -1386,11 +1399,11 @@ The principal component analysis included the four variables log\textsc{Relative
 \tabref{tbl: summary PC discorpus} shows a summary of the principal components. The first principal component accounts for most of the variance and is composed more or less equally of all measures. The second component is dominated by \textsc{TypeOfBase} and log\textsc{RelativeFrequency}, the third component mostly represents \textsc{SemanticTransparency}, \textsc{TypeOfBase} and log\textsc{RelativeFrequency}, and the fourth is mostly composed of \textsc{SemanticTransparency} and \textsc{SemanticTransparencyRating}. The second and the third component explain much less variance than the first, and the last principal component explains barely any variance. The first three principal components were included in the model.
 
 
-\clearpage
+
 After model simplification none of the principal components remained in the model. The final model resembles the final model of the complete data set. This means that the four variables \textsc{Environment}, \textsc{LocalSpeechRate}, \textsc{Voicing} and \textsc{BaseInitialStress} proved to be significant, and that \textsc{Environment} and \textsc{BaseInitialStress} form an interaction in the model. Decomposability did not affect fricative duration. 
 
 
-\begin{table*}[t!]
+\begin{table*}
 	\caption{ Summary of principal components}
 	\label{tbl: summary PC discorpus}
 	
@@ -1398,7 +1411,7 @@ After model simplification none of the principal components remained in the mode
 			\begin{tabular}{lrrrr}
 				
 				
-				\midrule
+				\lsptoprule
 				
 				
 				\multicolumn{5}{l}{\textbf{Composition of principal components}}\\
@@ -1415,7 +1428,7 @@ After model simplification none of the principal components remained in the mode
 				&PC1&          PC2 &       PC3       & PC4  \\
 				\midrule
 				Proportion of Variance &0.679& 0.174& 0.105& 0.042\\
-				\midrule
+				\lspbottomrule
 			\end{tabular}
 		}
 	
@@ -1444,7 +1457,7 @@ After model simplification, the following four variables remained in the final m
     	
     					\resizebox{\textwidth}{!}{%		
     		\begin{tabular}{lrrrr}
-    			\midrule
+    			\lsptoprule
     			& Estimate & Std. Error & t-value & p-value  \\ 
     			\midrule
     			Intercept                             & 1.937 &   0.231  & 8.384 &$<$ 0.001\\	
@@ -1461,7 +1474,8 @@ After model simplification, the following four variables remained in the final m
     			\textsc{BaseInitialStress}-\texttt{unstressed}   &-0.370 &  0.185  & -1.998  &0.048 \\ 
 
     			\midrule\\
-    			Adjusted R-squared: 0.262
+    			Adjusted R-squared: 0.262\\
+			\lspbottomrule
     		\end{tabular}
     	}
     	
@@ -1485,7 +1499,7 @@ The effect of \textsc{BaseInitialStress} on relative duration with \prefix{dis} 
     	
     					\resizebox{\textwidth}{!}{%		
     		\begin{tabular}{lrrrr}
-    			\midrule
+    			\lsptoprule
     			& Estimate & Std. Error & t-value & p-value  \\ 
     			\midrule
     			Intercept                             & 2.878   &  0.172 & 16.692  & $<$ 0.001 \\	
@@ -1496,7 +1510,8 @@ The effect of \textsc{BaseInitialStress} on relative duration with \prefix{dis} 
     			
     			
     			\midrule\\
-    			Adjusted R-squared: 0.204 
+    			Adjusted R-squared: 0.204 \\
+			\lspbottomrule
     		\end{tabular}
     	}
     	
@@ -1508,8 +1523,8 @@ After fitting the model with the individual decomposability measures, the model 
 The effect of \textsc{PC1} is shown in \figref{fig:PC1 dis Corpus}. 
 
 
-\begin{figure*} [b!]
-	\centering
+\begin{figure*}
+	
 	\includegraphics [scale=0.4] {images/Corpus/disPCAbsPC4.png}
 	\caption{Effect of PC1 on relative consonant duration in complete \prefix{dis}data set}
 	\label{fig:PC1 dis Corpus}
@@ -1580,19 +1595,22 @@ The final model is summarized in \tabref {tbl: corpus summary model ly}.
 					\resizebox{\textwidth}{!}{%		
 		
 		\begin{tabular}{lrrrr}
-			\midrule
+			
+			
+			\lsptoprule
 			& Estimate & Std. Error & t-value & p-value  \\ 
 			\midrule
 			Intercept                           &   77.323& 8.438 & 9.163& $<$0.001\\
 			\textsc{Environment}-\texttt{syllabic l\#l} &
-			\color[HTML]{9B9B9B} {7.387}  & \color[HTML]{9B9B9B} 5.641 &\color[HTML]{9B9B9B}1.309 &\color[HTML]{9B9B9B} 0.192 \\
+			\color{lsLightGray} {7.387}  & \color{lsLightGray} 5.641 &\color{lsLightGray}1.309 &\color{lsLightGray} 0.192 \\
 			\textsc{Environment}-\texttt{\#l} &
-			\color[HTML]{9B9B9B} {3.965} & \color[HTML]{9B9B9B}  4.761 &\color[HTML]{9B9B9B}0.833  & \color[HTML]{9B9B9B}0.406 \\
+			\color{lsLightGray} {3.965} & \color{lsLightGray}  4.761 &\color{lsLightGray}0.833  & \color{lsLightGray}0.406 \\
 			\textsc{LocalSpeechRate} &                 -2.335 &  0.438 & -5.332& $<$0.001\\
 			\textsc{PrecedingSegment} - \texttt{vowel}  &    15.694  &4.429&  3.544  & 0.001\\
 				log\textsc{WordFormFrequency} &       -1.631&0.777 &  -2.100 & 0.038 \\		
 			\midrule\\
-			Adjusted R-squared: 0.236
+			Adjusted R-squared: 0.236\\
+			\lspbottomrule
 
 		\end{tabular}
 	}
@@ -1606,7 +1624,7 @@ The final model is summarized in \tabref {tbl: corpus summary model ly}.
 The model explains about 24\% of the variance and features four variables of which three are significant. The three noise variables \textsc{LocalSpeechRate}, \textsc{PrecedingSegment} and log\textsc{WordFormFrequency} are significant. 
 The variable \textsc{Environment} does not show a significant effect but remained in the model as it is the crucial variable with regard to gemination.
 
-\clearpage
+
 
 \figref{fig:corpus covariates ly} displays the effects of \textsc{LocalSpeechRate} and \textsc{PrecedingSegment}. The left panel of the figure shows that with increasing speech rate /l/ becomes shorter, and the right panel shows that after a vowel /l/ is longer than after a consonant. These effects are expected.
 
@@ -1614,9 +1632,9 @@ The variable \textsc{Environment} does not show a significant effect but remaine
 
 
 
-\begin{figure*} [h!]
-	\centering
-		\vspace*{-0.5cm}
+\begin{figure*}
+	
+		
 	\includegraphics[scale=.8] {images/Corpus/lyModelcov.png}
 	\caption{Effects of local speech rate and preceding segment on consonant duration in \suffix{ly}-data set}
 	\label{fig:corpus covariates ly}
@@ -1631,8 +1649,8 @@ The left panel of the figure shows that with increasing frequency /l/ becomes sh
 The right panel of the figure shows the insignificant effect of \textsc{Environment} on consonant duration in \suffix{ly}. The figure clearly shows that there is no durational difference between double /l/ (\texttt{l\#l}), syllabic double /l/ (syllabic \texttt{l\#l}) and singleton /l/ (\texttt{\#l}). The suffix \suffix{ly} thus clearly degeminates in absolute duration. 
 
 
-\begin{figure*} [t!]
-	\centering
+\begin{figure*}
+	
 
 	\includegraphics[scale=.8] {images/Corpus/lyModelTransitionTypeAndFreq.png}
 	\caption{Effects of word form frequency  and environment on consonant duration in \suffix{ly}-data set}
@@ -1669,7 +1687,7 @@ The decomposability variables did not prove to be significant in either model.
 The first durational analyses looked at the distribution of duration across environments to get a first impression of whether the affixes under investigation geminate, and if so, whether gemination is a gradient or a categorical phenomenon. 
 For the prefixes, the analyses revealed that the distribution of duration in the data sets is bimodal, with the double consonants being significantly longer than the singletons. This indicates that the prefixes geminate, and that gemination is categorical. The distribution for \suffix{ly} is not bimodal, and doubles are not longer than singletons. This suggests degemination with \suffix{ly}. The impression that the prefixes geminate and that the suffix degeminates was validated in the linear models.
 
-\clearpage
+
 For all data sets at least two linear models were fitted, one predicting absolute consonant duration and one predicting relative consonant duration. 
 In general, both models reveal very similar results, i.e. for the most part the same variables are significant in both models. However, the relative models feature fewer variables than the absolute models.  Importantly, the effects of the variables of interest do not differ between the models, i.e. the same variables of interest are significant in both models. The relative duration models only feature less noise variables. 
 The variable \textsc{Environment} shows stronger effects in absolute than in relative duration. 
@@ -1677,16 +1695,16 @@ Furthermore, for all affixes, the absolute duration models explain more of the v
 The results thus suggest that absolute consonant duration is a better measure of gemination than relative consonant duration. In other words, gemination in English is not expressed by a particular consonant-vowel ratio but by absolute consonant duration. 
 In what follows I will therefore concentrate on absolute consonant duration.
 
-\begin{table*}[b!]
+\begin{table*}
 	\caption{Overview of significant variables in absolute duration models}
 	\label{tbl: Overview of results in the corpus study}
-	\centering
+	
 	%	
 	
 		%			\resizebox{\textwidth}{!}{%		
 		\begin{tabular} {lccccc}
 			
-			
+			\lsptoprule
 			\textbf{Variable} & \textbf{un-} & \textbf{im-} &\textbf{un-} &\textbf{dis-}& \textbf{-ly}\\
 			& & &\& \textbf{im-}  && \\
 			\midrule			
@@ -1704,14 +1722,15 @@ In what follows I will therefore concentrate on absolute consonant duration.
 			
 			\multicolumn{6}{l}{\small \checkmark \hspace*{0.2cm}: significant in at least one of the absolute duration models} \\			
 			\multicolumn{6}{l}{\small n.s. : not significant in any of the absolute duration models} \\			
-			\multicolumn{6}{l}{\small - \hspace*{0.45cm}: not included in the absolute duration models} \\			
+			\multicolumn{6}{l}{\small - \hspace*{0.45cm}: not included in the absolute duration models} \\	\\
+			\lspbottomrule		
 			
 		\end{tabular}
 		%	}
 	
 	
 	
-	\vspace*{-0.7cm}
+	
 \end{table*}
 
 
@@ -1752,13 +1771,14 @@ The conditions of the predicted values are the same as in the partial effects pl
 
 
 
-\begin{table}[!t]
+\begin{table}
 	\caption{Overview of predicted durations in the corpus studies}
 	\label{tbl: Overview of environment in the corpus study}
-	\centering
+	
 	
 					\resizebox{\textwidth}{!}{%		
 		\begin{tabular} {lcccc}
+		\lsptoprule
 			
 			\multicolumn{5}{l}{\textbf{Predicted durations}}\\
 					\\
@@ -1805,6 +1825,7 @@ The conditions of the predicted values are the same as in the partial effects pl
 
 			\multicolumn{5}{l}{\textsuperscript{1} \footnotesize{stressed base-initial syllable}}\\
 			\multicolumn{5}{l}{\textsuperscript{2} \footnotesize{voiceless}}\\
+			\lspbottomrule
 
 		\end{tabular}
 	}
