@@ -275,7 +275,7 @@ The first cluster analysis conducted investigated all types of the corpus study,
  
 
  
-  Figure \ref{fig:cluster corpus all affixes} displays the relation between the variables in a dendrogram. On the y-axis the squared Spearman correlation score between the variables is displayed. 
+  \figref{fig:cluster corpus all affixes} displays the relation between the variables in a dendrogram. On the y-axis the squared Spearman correlation score between the variables is displayed. 
   The figure shows three splits which structure the variables into four clusters. The lower the splits in the figure, the higher are the correlations between the variables of the pertinent clusters.
       The first split separates the  variable \textsc{LSA-Score} from all other variables. \textsc{LSAScore} thus forms its own cluster, which indicates the dissimilarity of this variable to the other four decomposability variables. The second split separates the variable log\textsc{RelativeFrequency} from \textsc{numSemanticTransparency}, \textsc{SemanticTransparencyRating} and \textsc{numTypeOfBase}. This shows that log\textsc{RelativeFrequency} is also rather dissimilar from the other three decomposability variables. 
       That log\textsc{RelativeFrequency} and \textsc{LSAScore} are different from the other three decomposability variables is also shown by the high position of the first two splits in the figure.
@@ -400,7 +400,7 @@ The affixes \prefix{un} and \suffix{ly} only feature transparent items, i.e. the
 
 
 
-The distribution of the variable \textsc{SemanticTransparencyRating} reveals a similar picture. Table \ref{tbl:Corpus distribution semantic transparency rating} shows the distribution of the median ratings (of types) for each affix. Again, the total number of types and the percentage of types are given. 
+The distribution of the variable \textsc{SemanticTransparencyRating} reveals a similar picture. \tabref{tbl:Corpus distribution semantic transparency rating} shows the distribution of the median ratings (of types) for each affix. Again, the total number of types and the percentage of types are given. 
 The two affixes \prefix{un} and \suffix{ly} were rated to be the easiest to segment. Locative \prefix{in} and \prefix{dis} were rated to be the most difficult to segment.
  
 
@@ -440,7 +440,7 @@ All in all, the rating clearly shows that locative \prefix{in} is the least segm
 
 
 
-Table \ref{tbl:Corpus distribution type of base} gives the distribution for the variable \textsc{TypeOfBase} for all affixes. It shows that locative \prefix{in}, unlike all other affixes, has a strong preference for bound roots. Almost all of the \prefix{un} and \suffix{ly}-affixed words feature a word as a base. For negative \prefix{in} and \prefix{dis}, there are quite a few words which feature a bound root. As indicated by pairwise tests of proportions, the differences between all affixes, except for the one between \prefix{un} and \suffix{ly} and the one between negative \prefix{in} and \prefix{dis}, are significant. On can thus state that in terms of type of base, locative \prefix{in} is the least segmentable affix, \prefix{un} and \suffix{ly} are the most segmentable affixes, and \prefix{dis} and negative \prefix{in} pattern in between.
+\tabref{tbl:Corpus distribution type of base} gives the distribution for the variable \textsc{TypeOfBase} for all affixes. It shows that locative \prefix{in}, unlike all other affixes, has a strong preference for bound roots. Almost all of the \prefix{un} and \suffix{ly}-affixed words feature a word as a base. For negative \prefix{in} and \prefix{dis}, there are quite a few words which feature a bound root. As indicated by pairwise tests of proportions, the differences between all affixes, except for the one between \prefix{un} and \suffix{ly} and the one between negative \prefix{in} and \prefix{dis}, are significant. On can thus state that in terms of type of base, locative \prefix{in} is the least segmentable affix, \prefix{un} and \suffix{ly} are the most segmentable affixes, and \prefix{dis} and negative \prefix{in} pattern in between.
 
 \begin{table}
 	\caption{Type of base by affix}
@@ -485,7 +485,7 @@ The plot suggests that locative \prefix{in} is the least segmentable affix havin
             
 
 One reason for the insignificance of the contrasts between the affixes might be that there are not enough observations for each affix to reach significance. Furthermore, the differences in relative frequency between the affixes are quite small. This is partly due to the gradient nature of the variable log\textsc{RelativeFre-quency}. In combination, the size of the data set and the gradient nature of the variable might lead to a lack of statistical power. 
-To alleviate this problem, I recoded the variable log\textsc{RelativeFrequency} into a categorical one. This especially makes sense considering that the variable has a natural threshold. For all types with a relative frequency below 0, the derivative is less frequent than its base. For all items having a relative frequency higher than 0, the opposite is the case. Therefore, items with a relative frequency below 0 were recoded as being `more decomposable', and items with a relative frequency higher than 0 were recoded as `less decomposable' (see \citealt{Hay.2001,Collie.2008} for a similar coding of relative frequency). Table \ref{tbl:Corpus Categorical RelFreq} displays the distribution across affixes.
+To alleviate this problem, I recoded the variable log\textsc{RelativeFrequency} into a categorical one. This especially makes sense considering that the variable has a natural threshold. For all types with a relative frequency below 0, the derivative is less frequent than its base. For all items having a relative frequency higher than 0, the opposite is the case. Therefore, items with a relative frequency below 0 were recoded as being `more decomposable', and items with a relative frequency higher than 0 were recoded as `less decomposable' (see \citealt{Hay.2001,Collie.2008} for a similar coding of relative frequency). \tabref{tbl:Corpus Categorical RelFreq} displays the distribution across affixes.
 Pairwise comparisons revealed that \suffix{ly} has significantly more `more decomposable' words  than negative \prefix{in}, locative \prefix{in} and \prefix{dis}. Furthermore, locative \prefix{in} has significantly less  `more decomposable' words than \prefix{un} and negative \prefix{in}. 
 
 
@@ -534,7 +534,7 @@ To sum up the comparisons of the affixes' relative frequency, \prefix{un} and \s
 
 
 %  LSA
-Turning to the last measure of decomposability, the comparison of the affixes' LSA scores reveals that there are only minor differences between the affixes. Figure \ref{fig: corpus LSA comparison} displays these differences using boxplots. On the x-axis the LSA score is displayed. Each box represents the distribution of the LSA scores for one affix in increasing order. Locative \prefix{in} has the lowest score indicating that words featuring this affix are the least semantically similar to their base words. In terms of semantic similarity, they can thus be said to be the least decomposable words in the data set. Words with the affix \suffix{ly} have the highest score, and are thus the most similar to their base word. They are the most decomposable.
+Turning to the last measure of decomposability, the comparison of the affixes' LSA scores reveals that there are only minor differences between the affixes. \figref{fig: corpus LSA comparison} displays these differences using boxplots. On the x-axis the LSA score is displayed. Each box represents the distribution of the LSA scores for one affix in increasing order. Locative \prefix{in} has the lowest score indicating that words featuring this affix are the least semantically similar to their base words. In terms of semantic similarity, they can thus be said to be the least decomposable words in the data set. Words with the affix \suffix{ly} have the highest score, and are thus the most similar to their base word. They are the most decomposable.
 However, the figure shows that there is a big overlap in the distribution of the LSA scores across affixes, i.e. the differences between affixes are rather small. Statistical analyses confirm this impression.
 While an ANOVA ($F=8.512, p< 0.001$) showed a significant effect of the affix on the LSA score, the pair-wise comparison of the means using Tukey contrasts shows  that only four of the contrasts are significant. The affix \suffix{ly} has significantly higher LSA scores than the affixes \prefix{un} ($t$-$value=0.027, p=0.01$), locative \prefix{in} ($t$-$value=5.197, p< 0.001$) and \prefix{dis}  ($t$-$value=3.443, p=0.006$). Furthermore, the affix \prefix{un} has significantly higher scores than the  affix locative \prefix{in} ($t$-$value=2.772, p=0.044$). 
 
@@ -545,7 +545,7 @@ While an ANOVA ($F=8.512, p< 0.001$) showed a significant effect of the affix on
         One can summarize that despite the fact that for a lot of types no LSA score could be computed, and the comparison of affixes in terms of their LSA score is thus based on a rather small number of observations, the distribution of the variable \textsc{LSAScore} reveals the same picture as the other decomposability variables. Locative \prefix{in} is the least segmentable affix, followed by \prefix{dis} and negative \prefix{in}. The affixes \prefix{un} and \suffix{ly} are the most segmentable affixes. 
         
                                                                
-After having looked at each decomposability measure individually, let us now take a look at the whole picture. Table \ref{tbl:summary comparison of affix} summarizes the results of the comparisons by showing a segmentability hierarchy for each decomposability measure. The segmentability hierarchies rank the affixes from the most segmentable to the least segmentable. The table shows very similar hierarchies for all measures. Locative \prefix{in} is the least segmentable affix, followed by \prefix{dis} and negative \prefix{in}. The affixes \prefix{un} and \suffix{ly} are the most segmentable affixes out of the five. 
+After having looked at each decomposability measure individually, let us now take a look at the whole picture. \tabref{tbl:summary comparison of affix} summarizes the results of the comparisons by showing a segmentability hierarchy for each decomposability measure. The segmentability hierarchies rank the affixes from the most segmentable to the least segmentable. The table shows very similar hierarchies for all measures. Locative \prefix{in} is the least segmentable affix, followed by \prefix{dis} and negative \prefix{in}. The affixes \prefix{un} and \suffix{ly} are the most segmentable affixes out of the five. 
 
 
 \begin{table*}
@@ -679,7 +679,7 @@ The plots of the regression models were generated with the \texttt{visreg packag
 \end{figure*}
 
 % boxplots			
-Figure \ref{fig:Corpus raw duration distribution} depicts the distribution of consonant duration for each environment in each subset using boxplots. The distribution in the \prefix{un}data set is shown in the upper left panel, the one for \prefix{in} in the upper right panel, the one for \prefix{dis} in the lower left panel, and the one for \suffix{ly} in the lower right panel.
+\figref{fig:Corpus raw duration distribution} depicts the distribution of consonant duration for each environment in each subset using boxplots. The distribution in the \prefix{un}data set is shown in the upper left panel, the one for \prefix{in} in the upper right panel, the one for \prefix{dis} in the lower left panel, and the one for \suffix{ly} in the lower right panel.
 The y-axis of each plot displays the duration of the consonant in milliseconds. The leftmost box in each plot represents the distribution for items with a double consonant, and the boxes on the left show the distributions for items with a single consonant. For \suffix{ly}, the box in the middle of the panel shows the distribution of the syllabic doubles.
  
  
@@ -756,7 +756,7 @@ The \suffix{ly}-data set does not show a bimodal distribution, i.e. there is a b
   \end{table*}
   
 
-Table \ref{tbl:Corpus raw duration} shows a summary of the distribution of consonant duration for each environment in the four subsets. Overall the durations of the consonants in the data set are in the same range as those found in other studies. For example, \citet[Tables II and X]{Umeda.1977} finds in her North American English data that intervocalic word-internal singleton /n/ is between 34 and 38 ms long (depending on stress). 
+\tabref{tbl:Corpus raw duration} shows a summary of the distribution of consonant duration for each environment in the four subsets. Overall the durations of the consonants in the data set are in the same range as those found in other studies. For example, \citet[Tables II and X]{Umeda.1977} finds in her North American English data that intervocalic word-internal singleton /n/ is between 34 and 38 ms long (depending on stress). 
 Double /n/s across a word boundary have a duration of 100 ms. For singleton intervocalic word-medial /m/, Umeda finds mean durations between 70 and 74 ms, and for singleton /s/, mean durations range from 90 to 120 ms in that position. Singleton /l/ is between 40 and 47 ms long in Umeda's study. This indicates that the data and the durational measurements are valid.
 
 Let us now turn to the distribution of duration for single and double consonants in the data, i.e. to the question of gemination.  As already shown in \figref{fig:Corpus raw duration distribution}, for the three prefixes the mean and median duration of the double consonants is much higher than the mean and median duration of the single consonants. The differences in mean range from 26 ms (\texttt{m\#mV} to  \texttt{m\#C)} to 55 ms (\texttt{n\#nV} to  \texttt{n\#V}). For \suffix{ly}, there is a difference in mean duration of 8 ms between double /l/ (\texttt{l\#l}) and single /l/ (\texttt{\#l}). The double is thus only slightly longer than the singleton.
@@ -817,13 +817,13 @@ However, since it is well known that the duration of segments in natural speech 
 
 
 
-\subsection{The Prefix \prefix{un}} \label{un corpus}
+\subsection{The prefix \prefix{un}} \label{un corpus}
 
 \subsubsection{Absolute duration}
 
 The linear model predicting absolute duration with \prefix{un} was fitted according to the procedure described in sections \ref{stats} and \ref{analyses dur corpus}. 
 The residuals of the initial model showed a non-normal distribution. Therefore, the dependent variable \textsc{AbsolutConsonantDuration} was transformed by the Box-Cox-transformation parameter $0.303$, and outliers were removed. The removal of outliers resulted in the loss of  2 observations, i.e. 1.3\% of the observations. After the model was refitted with the transformed dependent variable, it showed a satisfactory distribution of residuals. The model was then simplified and interactions were tested  (see \hyperref[Appendix C: Summaries of tested interactions in corpus study]{appendix C} for a list of all tested interactions).
-None of the interactions was significant, and only two significant predictors remained in the final model, \textsc{Environment} and  \textsc{LocalSpeechRate}. The model explains 57\% of the variance found in the data. Table \ref{tbl: summary model un} documents the estimates for each predictor and their p-values in the final model.
+None of the interactions was significant, and only two significant predictors remained in the final model, \textsc{Environment} and  \textsc{LocalSpeechRate}. The model explains 57\% of the variance found in the data. \tabref{tbl: summary model un} documents the estimates for each predictor and their p-values in the final model.
 
 \begin{table*}[!h]
 	\caption{Summary of linear model for variables predicting the Box-Cox-transformed duration of [n] in \prefix{un}prefixed words}
@@ -848,7 +848,7 @@ None of the interactions was significant, and only two significant predictors re
 \end{table*}
 
 
-Figure \ref{fig:SpeechRate un} depicts the effect of \textsc{LocalSpeechRate}.  The y-axis of the graph displays the duration of the nasal in milliseconds, the horizontal axis represents the local speech rate. The line represents the estimated effect of the variable. The shaded areas in the graphs represent the 95\% confidence intervals. The  plot shows, the higher the speech rate, i.e. the more segments are pronounced in a given amount of time, the shorter becomes the nasal. This is an expected effect.
+\figref{fig:SpeechRate un} depicts the effect of \textsc{LocalSpeechRate}.  The y-axis of the graph displays the duration of the nasal in milliseconds, the horizontal axis represents the local speech rate. The line represents the estimated effect of the variable. The shaded areas in the graphs represent the 95\% confidence intervals. The  plot shows, the higher the speech rate, i.e. the more segments are pronounced in a given amount of time, the shorter becomes the nasal. This is an expected effect.
 
 
 
@@ -899,7 +899,7 @@ The analysis revealed that the two most important variables are those which also
 
 
 The model predicting relative consonant duration with \prefix{un} was fitted similarly to the model predicting absolute consonant duration and the same interactions were tested. Again the dependent variable was transformed using Box-Cox- transformation to achieve a normal distribution of residuals. The transformation parameter was $0.141$. In contrast to the absolute duration model, no outliers had to be excluded. 
- Table \ref{tbl: summary corpus un rel dur} summarizes the final model. The model explains about 33\% of the variance and features only one variable, \textsc{Environment}.
+ \tabref{tbl: summary corpus un rel dur} summarizes the final model. The model explains about 33\% of the variance and features only one variable, \textsc{Environment}.
 
 
 
@@ -941,7 +941,7 @@ Two models were fitted to predict consonant duration with  \prefix{un}. The mode
 With regard to the other variables of interest, only \textsc{LSAScore} and log\textsc{RelativeFrequency} could be tested. Neither had a significant effect. 
 
 
-\subsection{The Prefix \prefix{in}} \label{in corpus}
+\subsection{The prefix \prefix{in}} \label{in corpus}
 
 
 \subsubsection{Absolute duration}
@@ -979,7 +979,7 @@ An overview of the model coefficients is given in \tabref{tbl: summary model2}.%
 \end{table*}
 
 
-Figure \ref{fig:covariates in} displays the effects of the two noise variables in the model. The left panel shows the effect of  \textsc{LocalSpeechRate}. This effect is as expected: 
+\figref{fig:covariates in} displays the effects of the two noise variables in the model. The left panel shows the effect of  \textsc{LocalSpeechRate}. This effect is as expected: 
 the higher the speech rate, the shorter the nasal. The right panel shows the effect of \textsc{BaseInitialStress}. With an estimated mean duration of 74~ms, the consonant is 21~ms shorter before an unstressed base-initial syllable than before a stressed base-initial syllable (95~ms). This result is expected, too. As mentioned in \sectref{General method annotation}, \cite{Umeda.1977} also found that nasals before unstressed vowels are shorter than nasals before stressed vowels.
 
 \begin{figure*} [b!]
@@ -1018,7 +1018,7 @@ None of the investigated decomposability measures proved to be significant. Howe
 
 To test the effect of a combined decomposability measure, an additional model with combined decomposability measures (as opposed to individual decomposability measures) was fitted. The combined measures were created by means of a principal component analysis (cf. \sectref{stats} on principal component analyses). 
 The principal component analysis was fitted with the variables log\textsc{Relative-Frequency}, \textsc{SemanticTransparency}, \textsc{SemanticTransparencyRating}, \textsc{TypeOfBase} and \textsc{Affix}. The variable \textsc{Affix} was included because of the differences in segmentability between locative and negative \prefix{in} (see \sectref{The decomposability of the four affixes: a comparison} for discussion). \textsc{LSAScore} was excluded because of the low number of observations coded for this variable. Categorical variables were recoded as numerical before entering the analysis, and all variables were scaled.
-Table \ref{tbl: summary PC in corpus} summarizes the analysis by showing the composition of each principal component, i.e. the loading of each variable for each principal component, and by displaying the proportion of variance covered by each component. 
+\tabref{tbl: summary PC in corpus} summarizes the analysis by showing the composition of each principal component, i.e. the loading of each variable for each principal component, and by displaying the proportion of variance covered by each component. 
 
 
 \begin{table}
@@ -1204,11 +1204,11 @@ The final model explains 49\% of the variance and features five variables, \text
 
 
 
-As in the \prefix{un} and \prefix{in}models, this model shows that doubles are longer than singletons. Interestingly, there is also  a  main effect of \textsc{Affix}. Figure \ref{fig:inUnModel} shows that negative \prefix{in} is significantly longer than locative \prefix{in}, and that \prefix{un} is significantly longer than negative \prefix{in}.  We thus find a decline in duration from \prefix{un}, to negative \prefix{in}, to locative \prefix{in}. This decline is fully in line with the decline in segmentability of the prefixes found in \sectref{The decomposability of the four affixes: a comparison}. Crucially, there is no significant interaction between \textsc{Affix} and \textsc{NumberOfConsonants}, which means that all three prefixes geminate.
+As in the \prefix{un} and \prefix{in}models, this model shows that doubles are longer than singletons. Interestingly, there is also  a  main effect of \textsc{Affix}. \figref{fig:inUnModel} shows that negative \prefix{in} is significantly longer than locative \prefix{in}, and that \prefix{un} is significantly longer than negative \prefix{in}.  We thus find a decline in duration from \prefix{un}, to negative \prefix{in}, to locative \prefix{in}. This decline is fully in line with the decline in segmentability of the prefixes found in \sectref{The decomposability of the four affixes: a comparison}. Crucially, there is no significant interaction between \textsc{Affix} and \textsc{NumberOfConsonants}, which means that all three prefixes geminate.
 
 In addition to the effects of the variables of interest, there is the expected effect of \textsc{LocalSpeechRate} (nasals become shorter with increasing speech rate) and the expected effect of the \textsc{FollowingSegment} (nasals are shorter before vowels). There is also an effect of \textsc{BaseInitialStress} such that the nasal is shorter before unstressed syllables.
 
-\subsection{The Prefix \prefix{dis}} \label{corpus results dis}
+\subsection{The prefix \prefix{dis}} \label{corpus results dis}
 
 
 \subsubsection{Absolute duration}
@@ -1269,7 +1269,7 @@ An overview of the final model, i.e. the model after simplification, is given in
 
 
 %speech rate
-Figure \ref{fig:corpus covariates dis} displays the effects of \textsc{LocalSpeechRate} and \textsc{Voicing}. The effect of \textsc{LocalSpeechRate} can be seen in the left panel. As expected, with increasing speech rate the fricative in \prefix{dis}prefixed words becomes shorter. 
+\figref{fig:corpus covariates dis} displays the effects of \textsc{LocalSpeechRate} and \textsc{Voicing}. The effect of \textsc{LocalSpeechRate} can be seen in the left panel. As expected, with increasing speech rate the fricative in \prefix{dis}prefixed words becomes shorter. 
 %voicing
 The right panel of the figure shows the effect of \textsc{Voicing}. Voiced fricatives are significantly shorter than voiceless fricatives. For doubles this difference is predicted to be 47~ms, for singletons voiced fricatives are predicted to be 36~ms shorter than voiceless fricatives. 
 With regard to \textsc{Voicing}, it is important to note that the distribution of voiced items in the data set is unbalanced. All voiced \prefix{dis}prefixed words are semantically opaque, followed by a vowel and have a stressed base-initial syllable. This skewed distribution might have influenced the final model, i.e. it might have skewed the effects of the affected variables. This problem will be discussed in further detail below.
@@ -1345,9 +1345,9 @@ is related to the distribution of the variable \textsc{Voicing}.
 \end{table*}
 
 The model predicting consonant duration with voiceless \prefix{dis}prefixed words was fitted similarly to the model with all items. 
-Table \ref{tbl: summary model6} shows the final model for the voiceless fricatives. It explains about 38\% of the variance found in the data. 
+\tabref{tbl: summary model6} shows the final model for the voiceless fricatives. It explains about 38\% of the variance found in the data. 
 As in the model with all \prefix{dis}prefixed words, \textsc{LocalSpeechRate} has the expected effect on duration, and we find an effect of \textsc{BaseInitialStress} and \textsc{Environment}. However, in contrast to the complete model, in this model \textsc{BaseInitialStress} and \textsc{Environment} are not interacting. 
-Figure \ref{fig:corpus main effect 1 dis without voiced items} shows the effect of  \textsc{Environment}. One clearly sees that the double is predicted to be longer than both singleton consonants, irrespective of base-initial stress. Furthermore, the durational difference between the two singleton levels is not significant in this model. One can hence assume that the marginally significant difference between the two singleton levels in the complete model was caused by the uneven distribution of voiced items in the complete \prefix{dis}data set. 
+\figref{fig:corpus main effect 1 dis without voiced items} shows the effect of  \textsc{Environment}. One clearly sees that the double is predicted to be longer than both singleton consonants, irrespective of base-initial stress. Furthermore, the durational difference between the two singleton levels is not significant in this model. One can hence assume that the marginally significant difference between the two singleton levels in the complete model was caused by the uneven distribution of voiced items in the complete \prefix{dis}data set. 
 
 
 \begin{figure*} [t!]
@@ -1383,7 +1383,7 @@ The principal component analysis included the four variables log\textsc{Relative
 
 
 
-Table \ref{tbl: summary PC discorpus} shows a summary of the principal components. The first principal component accounts for most of the variance and is composed more or less equally of all measures. The second component is dominated by \textsc{TypeOfBase} and log\textsc{RelativeFrequency}, the third component mostly represents \textsc{SemanticTransparency}, \textsc{TypeOfBase} and log\textsc{RelativeFrequency}, and the fourth is mostly composed of \textsc{SemanticTransparency} and \textsc{SemanticTransparencyRating}. The second and the third component explain much less variance than the first, and the last principal component explains barely any variance. The first three principal components were included in the model.
+\tabref{tbl: summary PC discorpus} shows a summary of the principal components. The first principal component accounts for most of the variance and is composed more or less equally of all measures. The second component is dominated by \textsc{TypeOfBase} and log\textsc{RelativeFrequency}, the third component mostly represents \textsc{SemanticTransparency}, \textsc{TypeOfBase} and log\textsc{RelativeFrequency}, and the fourth is mostly composed of \textsc{SemanticTransparency} and \textsc{SemanticTransparencyRating}. The second and the third component explain much less variance than the first, and the last principal component explains barely any variance. The first three principal components were included in the model.
 
 
 \clearpage
@@ -1608,7 +1608,7 @@ The variable \textsc{Environment} does not show a significant effect but remaine
 
 \clearpage
 
-Figure \ref{fig:corpus covariates ly} displays the effects of \textsc{LocalSpeechRate} and \textsc{PrecedingSegment}. The left panel of the figure shows that with increasing speech rate /l/ becomes shorter, and the right panel shows that after a vowel /l/ is longer than after a consonant. These effects are expected.
+\figref{fig:corpus covariates ly} displays the effects of \textsc{LocalSpeechRate} and \textsc{PrecedingSegment}. The left panel of the figure shows that with increasing speech rate /l/ becomes shorter, and the right panel shows that after a vowel /l/ is longer than after a consonant. These effects are expected.
 
 
 
@@ -1626,7 +1626,7 @@ Figure \ref{fig:corpus covariates ly} displays the effects of \textsc{LocalSpeec
 
 
 
-Figure \ref{fig:corpus main effects  ly} shows the effects of log\textsc{WordFormFrequency} and \textsc{Environment}.
+\figref{fig:corpus main effects  ly} shows the effects of log\textsc{WordFormFrequency} and \textsc{Environment}.
 The left panel of the figure shows that with increasing frequency /l/ becomes shorter. This is expected.
 The right panel of the figure shows the insignificant effect of \textsc{Environment} on consonant duration in \suffix{ly}. The figure clearly shows that there is no durational difference between double /l/ (\texttt{l\#l}), syllabic double /l/ (syllabic \texttt{l\#l}) and singleton /l/ (\texttt{\#l}). The suffix \suffix{ly} thus clearly degeminates in absolute duration. 
 
@@ -1715,7 +1715,7 @@ In what follows I will therefore concentrate on absolute consonant duration.
 \end{table*}
 
 
-Table \ref{tbl: Overview of results in the corpus study} shows an overview of the variables which show significant effects on absolute consonant duration in the subsets. Only variables which are significant in at least one of the absolute duration models are listed. For \prefix{dis}, the table indicates all variables which are significant in at least one of the two absolute duration models fitted, i.e. the model including all \prefix{dis}prefixed items and the model including only voiceless items.
+\tabref{tbl: Overview of results in the corpus study} shows an overview of the variables which show significant effects on absolute consonant duration in the subsets. Only variables which are significant in at least one of the absolute duration models are listed. For \prefix{dis}, the table indicates all variables which are significant in at least one of the two absolute duration models fitted, i.e. the model including all \prefix{dis}prefixed items and the model including only voiceless items.
 
 
 
@@ -1743,7 +1743,7 @@ However, in two of the models decomposability indirectly influenced duration. As
 
 
 The variable \textsc{Environment} significantly affected consonant duration in all prefixal models. For \suffix{ly}, there was no significant difference in duration between the three tested environments.
-Table \ref{tbl: Overview of environment in the corpus study} summarizes the predicted durations for all environments for all affixes. The table also shows the significant differences in predicted durations between doubles and singletons for the prefixes, as well as singleton-geminate ratios.
+\tabref{tbl: Overview of environment in the corpus study} summarizes the predicted durations for all environments for all affixes. The table also shows the significant differences in predicted durations between doubles and singletons for the prefixes, as well as singleton-geminate ratios.
 The conditions of the predicted values are the same as in the partial effects plots, i.e. numerical variables are held constant at their median and categorical variables are held constant at the most common category. For \prefix{dis}, two predicted values are shown, one for the complete data set (for words with a stressed base-initial syllable), and one for the voiceless data set.
 
 
