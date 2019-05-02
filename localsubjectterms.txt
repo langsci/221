@@ -1,2 +1,281 @@
-subject terms to index
-oneperline
+-able
+-al
+-er
+`fake' geminates
+fake geminates
+-ful
+-ing
+-ion
+-ity
+-ly
+-ness
+-ory
+gemination
+degemination
+absolute consonant duration
+accentuation
+acoustic duration
+acoustic realization
+affix ordering
+affixation
+affix-specific decomposability
+affix-specific informativeness
+affix-specific morphological informativeness approach
+affix-specific morphological segmentability
+affix-specific prediction
+affix-specific segmentability
+affix-stress
+allomorphs of in-
+automatic segmentation
+autosegmental representation
+boundary strength
+Box-Cox transformation
+bracket erasure
+British National Corpus
+careful speech
+casual speech
+categorical segmentability
+cluster analysis
+COCA
+collinearity
+Conbach's alpha
+cyclicity
+decomposability
+decomposability approach
+decomposability rating
+decomposability variables
+decomposed route
+degemination
+degree of gemination
+derivative frequency
+dis-
+dual-level affixes
+dual-route models
+exemplarbased models
+experimental reading
+experimental speech
+feed-forward structure
+fine phonetic detail
+frequency
+geminates in English
+gemination
+gemination hierarchy
+heterogeneity of processing hypothesis
+hierarchical cluster analysis
+homophones
+im-
+in-
+information load
+informativeness
+inital-strengthening
+interface between morphology
+phonology and phonetics
+intonational phrase
+intraclass correlation coefficient
+item-total correlations
+level 1
+level 2
+lexical geminates
+Lexical Phonology
+lexical stage
+lexical storage
+lexical strata
+linear mixed effects regression models
+linear model
+locative in-
+LSA score
+manual segmentation
+mental lexicon
+models of word storage and retrieval
+modular feed-forward models
+moraic representation
+morphological boundary strength
+morphological decomposability
+morphological geminates
+morphological informativeness
+morphological informativeness approach
+morphological paradigm
+morphological processing
+morphological segmentability
+morphological segmentability approach
+Morphological Segmentability Hypothesis
+morpho-phonetic interface
+morpho-phonolocigal phenomenon
+morpho-phonological interface
+morpho-phonological phenomenon
+morpho-phonological-phonetic interface
+multicollinearity
+multi-model inferencing
+multiple regression
+native locative in-
+natural conversational speech
+negative in-
+non-native in-
+orthography
+overfitting
+phonemic representations
+phonetic annotation
+phonetic detail
+phonetic realization
+phonetic reduction
+phonological representation
+phonological rules
+phonological word
+phonological word boundary
+phrasal boundary
+phrase-final lengthening
+pitch accent
+post-lexical level
+post-lexical processing
+predictability
+prefix stress
+prefixation
+principal component analysis
+probability of occurence
+productivity
+prosodic boundary
+prosodic hierarchy
+prosodic phonology
+prosodic word
+prosodic word approach
+read speech
+regression models
+relative duration
+relative frequency
+resting activation
+resyllabification
+segmentability
+segmentability approach
+segmentability hirarchy
+semantic information load
+semantic opacity
+semantic processing
+semantic similarity
+semantic transparency
+singleton-geminate ratio
+speech mode
+speech processing
+speech production models
+speech rate
+stem-level
+strata
+stratal approach
+stratal optimality theory
+stress
+stress preservation
+stress shift
+suffixation
+syllabicity
+un-
+underlying representation
+usage-based models
+utterance-final lenghtening
+whole-word route
+whole-word storage
+word form frequency
+word lemma frequency
+word stratum
+word-boundary geminates
+word-initernal geminates
+word-initial morphological geminates
+word-initial strengthening
+word-specific decomposability
+word-specific informativeness
+forms and synonyms
+adverbial -ly
+absolute duration
+accent
+accented
+morphological informativeness
+morphological segmentability
+allomorph -im,
+allomorph /im/
+boundary strengths
+Box-Cox transformations
+BNC
+careful and conversational speech
+carefully articulaed speech
+conversational speech
+experimental careful speech
+cluster analyses
+decomposable
+decompose
+decomposability ratings
+decomposability measures
+degeminate
+degeminates
+degree of (de)gemination
+degree of degemination
+degree of gemination
+dual-level affix
+experimental careful speech
+frequencies
+geminate
+geminates
+geminate's
+hierarchical cluster analyses
+homophonous
+/ir/
+/im/
+/il/
+ICC
+ICCs
+item-total correlation
+stratum 1
+stratum 2
+lexical geminates
+true geminates
+mixed effect models
+mixed models
+locative prefix in-
+inLoc
+in-loc
+LSA scores
+strength of the morphological boundary
+morphological gemination
+morphological geminate
+paradigm
+processing of complex words
+multiple regression models
+natural speech
+normal speech
+spontaneous speech
+inNEG
+in-neg
+phonemic representation
+reduction
+reduction process
+phonological representations
+phonological rule
+phonological word boundaries
+p-word boundary
+post-lexical stage
+post-lexical processes
+prefixal stress
+prefix-stress
+principal component
+principal component model
+principal component analyses
+paradigmatic probability
+syntagmatic probability
+prosodic boundaries
+prosodic words
+p-word
+relative constant duration
+resting activations
+resyllabify
+segmentability hirarchies
+semantic similarity scores
+semantically transparent
+singleton-double ratio
+models of speech production
+speech rates
+stratum
+stratal approaches
+stratal theory
+stratal OT
+stressed
+syllabic
+whole word route
+morphological segmentability 
+morphological informativeness 
