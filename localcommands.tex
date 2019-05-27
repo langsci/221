@@ -1,5 +1,5 @@
-\newcommand{\appref}[1]{Appendix \ref{#1}}
-\newcommand{\fnref}[1]{Footnote \ref{#1}} 
+\newcommand{\appref}[1]{Appendix~\ref{#1}}
+\newcommand{\fnref}[1]{Footnote~\ref{#1}} 
 
 \newenvironment{langscibars}{\begin{axis}[ybar,xtick=data, xticklabels from table={\mydata}{pos}, 
         width  = \textwidth,
@@ -68,7 +68,8 @@
 
 
 %checkmark
-\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+% \def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+\renewcommand*{\checkmark}{\ding{51}}
 
 
 %\graphicspath{ {images/} } %my path in which I store the graphs
