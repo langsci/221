@@ -49,76 +49,35 @@ Some of the tokens sampled had to be removed after closer inspection of the soun
 
 
 \begin{table}
-	\caption{Distribution of types and tokens in corpus study}
-	\label{tbl:distribution of types and tokens in corpus}
-	
-		
-		\begin{tabular} {llrr}
-				\lsptoprule	
-			%\\		
-			\textbf{un-}&&&\\
-		%	\\
-						\midrule   	
-			Environment & Example & Number of Types & Number of Tokens\\
-			\midrule
+	\caption{Distribution of types and tokens in corpus study\label{tbl:distribution of types and tokens in corpus}}
+	\begin{tabular}{llrr}
+        \lsptoprule
+                        &         &  Number of & Number of\\
+            Environment & Example &  \multicolumn{1}{c}{Types} & \multicolumn{1}{c}{Tokens}\\\midrule	
+			\multicolumn{4}{c}{un-}\\\midrule
 			n\#nV&\color{lsMidBlue}\textit{unnatural} & 6 & 23\\ 
 			n\#C&\color{lsMidBlue}\textit{untold} & 53 & 68\\ 
 			n\#V&\color{lsMidBlue}\textit{uneven} & 42 & 67\\
-			\midrule
-			Total&  & 101 & 158\\ 
-			\midrule
-		%	\midrule
-			\\
-			\textbf{in-}&&&\\
-		%	\\
-						\midrule   	
-			Environment & Example & Number of Types & Number of Tokens\\
-			\midrule
+			Total&  & 101 & 158\\\midrule
+			\multicolumn{4}{c}{in-}\\\midrule 
 			m\#mV&\color{lsMidBlue}\textit{immortal} & 16 & 89\\ 
-			m\#C&\color{lsMidBlue}\textit{impossible} & 67 & 67\\ 
-			\midrule   
-			Total&  & 83 & 156\\ 
-			\midrule     	
-	%		\midrule
-			\\
-			\textbf{dis-}&&&\\
-		%	\\
-									\midrule   	
-			Environment & Example & Number of Types & Number of Tokens\\
-			\midrule
+			m\#C&\color{lsMidBlue}\textit{impossible} & 67 & 67\\   
+			Total&  & 83 & 156\\\midrule
+			\multicolumn{4}{c}{dis-}\\\midrule   	
 			s\#sV&\color{lsMidBlue}\textit{dissatisfied} & 9 & 24\\ 
 			s\#C&\color{lsMidBlue}\textit{disgrace} & 21 & 45\\ 
-			s\#V&\color{lsMidBlue}\textit{disarm} & 34 & 59\\ 
-			\midrule   	
-			Total&  & 64 & 128\\ 
-			\midrule   	
-	%		\midrule
-			\\
-			\textbf{-ly}&&&\\
-		%	\\
-						\midrule   	
-			Environment & Example & Number of Types & Number of Tokens\\
-			\midrule
+			s\#V&\color{lsMidBlue}\textit{disarm} & 34 & 59\\
+			Total&  & 64 & 128\\\midrule
+			\multicolumn{4}{c}{-ly}\\\midrule   	
 			non-\is{syllabicity}syllabic l\#l &\color{lsMidBlue}\textit{really} & 29  & 33 \\ 
 			\is{syllabicity}syllabic 	l\#l &\color{lsMidBlue}\textit{ment(a)lly} & 48 & 48 \\ 
-			\#l &\color{lsMidBlue}\textit{possibly} & 73 & 73\\ 
-			\midrule   	
-			Total&  & 150  & 154\\ 
-		%	\midrule   	
+			\#l &\color{lsMidBlue}\textit{possibly} & 73 & 73\\
+			Total&  & 150  & 154\\ 	
 			\lspbottomrule                                                                                
 		\end{tabular}
-		
-	
 \end{table}
 
-
-
-
-
-
-
 \subsection{The decomposability rating} \label{decomposability rating corpus}
-
 %intro, what was done and what will I say in this para
 All types included in the corpus study were rated for their \isi{decomposability} in terms of \isi{semantic transparency}. The rating was carried out online using the software LimeSurvey (\citealt{LimeSurveyProjectTeam.2015}). All raters were native speakers of American English. The median rating of each item was coded in the variable  \textsc{SemanticTransparencyRating}. Before the median was computed, the ratings were tested for their reliability and their validity. In this section, I will describe the design of the rating and the analyses conducted to ensure reliability and validity. 
 
@@ -151,34 +110,14 @@ After excluding invalid ratings, based on the inspection of the ratings' distrib
 	
 		\resizebox{\textwidth}{!}{%
 			\begin{tabular} {lrrrrrrrr}
-			
 			\lsptoprule
-				&number &			  &  & &&  &  & \\
-				&of raters& Cronbach's \textbf{$\alpha$ }&ICC1 & \is{intraclass correlation coefficient (ICC)}intraclass correlation coefficient 2& \multicolumn{4}{r}{item-total correlation}\\
-				\midrule
-				&  &&&&Min & Max& Mean& Median  \\
-				\midrule
-				Rating 1:		& &&  & &&&&\\ 
-				\prefix{un} and 
-				\prefix{in}&26&0.99& 0.75 &0.77 &   0.69& 0.95& 0.88& 0.91 \\  
-				
-				
-				\midrule
-				
-				
-				Rating 2:& &&  & &&&&\\ 
-				\prefix{un} and \prefix{in}&32 &0.99 &0. 69 & 0.72 &0.69&  0.94& 0.85& 0.87 \\   			
-				
-				\midrule
-				
-				Rating 3:& &&  & &&&&\\ 
-				\prefix{dis}& 32& 0.98&  0.62 &0.66 & 0.63 &0.91& 0.83 &0.81\\   			
-				\midrule
-				
-				
-				Rating 4: & &&  & &&&&\\ 
-				\suffix{ly}& 20 &0.98 & 0.72 & 0.72 &0 .62 &1.0 &0.93 &0.99   \\  			
-				%			\midrule
+                & Number of & Cronbach's \\
+				Rating &\multicolumn{1}{c}{raters}& \multicolumn{1}{c}{$\alpha$} &ICC1 & \is{intraclass correlation coefficient (ICC)}ICC2& \multicolumn{4}{c}{item-total correlation}\\\cmidrule(lr){6-9}
+				&  &&&& Min & Max & Mean & Median  \\\midrule
+				1: \prefix{un} and \prefix{in}&26&0.99& 0.75 &0.77 &   0.69& 0.95& 0.88& 0.91 \\
+				2: \prefix{un} and \prefix{in}&32 &0.99 &0.69 & 0.72 &0.69&  0.94& 0.85& 0.87 \\
+				3: \prefix{dis}& 32& 0.98&  0.62 &0.66 & 0.63 &0.91& 0.83 &0.81\\
+				4: \suffix{ly}& 20 &0.98 & 0.72 & 0.72 &0.62 &1.00 &0.93 &0.99 \\
 				\lspbottomrule                                                                                
 		\end{tabular}
 		}
