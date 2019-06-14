@@ -53,164 +53,119 @@ Please work through the words one at a time in the order they are presented, mar
 
 
 \chapter{Summaries of variables in initial models of corpus study}\label{App B: Summaries of variables in initial models of corpus study}
-\begin{table}
+\begin{table}\small
 	\caption{Summary of dependent variable and covariates used in the initial model for \prefix{un}\label{tab: summary dep variables un-model}}
-		\resizebox{\textwidth}{!}{%
-			\begin{tabular}{lrrrrr}
+			\begin{tabularx}{\textwidth}{QSSSSS[table-format=3.0]}
 				\lsptoprule
-				Dependent Variable            & Mean  & St. Dev. & Min & Max&N \\ 
-				\midrule
-				\textsc{AbsoluteConsonantDuration}     & 60 & 28 & 16 & 137 & 158\\ 
-				
-				\midrule
-				Numerical Predictors &       Mean  & St. Dev. &     Min      & Max& N\\ 
-				\midrule
-				
-				
+				{Dependent variable}  &       {Mean}  & {St. Dev.} &     {Min}      & {Max}& {N}\\\midrule
+				\textsc{AbsoluteConsonantDuration}     & 60 & 28 & 16 & 137 & 158\\\midrule
+				{Numerical predictors} &       {Mean}  & {St. Dev.} &     {Min}      & {Max}& {N}\\\midrule
+% 				\midrule
 				%\textsc{SemanticTransparencyRating}  &1 & 0& 1 & 1 & 158\\
-				log\textsc{RelativeFrequency}          & $-$0.797 & 2.518 & $-$8.495 & 7.098& 158\\ 
+				log\textsc{RelativeFrequency}          & -0.797 & 2.518 & -8.495 & 7.098& 158\\ 
 				\textsc{LSAScore}          & 0.362 & 0.145 & 0.030& 0.810& 89\\ 
 				
 				\textsc{LocalSpeechRate}          & 13.190& 2.990 & 6.136& 20.570& 158\\ 
 				\textsc{PrecedingSegmentDuration}            & 87 & 29 & 20 & 167& 158\\ 
 				log\textsc{WordFormFrequency}      & 7.182& 1.953 & 0.000&  9.838 & 158\\ 
-				
 				\midrule
-				Categorical Predictors & Levels &   &  &   & N\\ 
-				\midrule
-				\textsc{Environment}       & \texttt{n\#nV}: 23 & \texttt{n\#C}: 68 & \texttt{n\#V}: 67  & &158 \\ 
+				\end{tabularx}
+				\begin{tabularx}{\textwidth}{QlrlrlrS[table-format=3.0]}
+				Categorical predictors & \multicolumn{6}{c}{Levels} & {N}\\\cmidrule(lr){1-1}\cmidrule(lr){2-7}\cmidrule(lr){8-8}
+				\textsc{Environment}       & \texttt{n\#nV}: &  23 & \texttt{n\#C}: & 68 & \texttt{n\#V}: & 67  &158 \\ 
 				%\textsc{SemanticTransparencyBinary}        & \texttt{opaque}: 0 & \texttt{transparent}: 158 & & &158 \\ 
 				%\textsc{TypeOfBase}        &\texttt{ bound root}:  2& \texttt{ word}: 156& & & 158\\ 			
-				\textsc{BaseInitialStress}        &\texttt{stressed}:& \texttt{unstressed}:& & & 158\\ 
-				&102 &  56 & & & \\ 
+				\textsc{BaseInitialStress}        &\texttt{stressed}:& 102 & \texttt{unstressed}:& 56 & & & 158\\ 
 				\lspbottomrule 
-			\end{tabular}}
+			\end{tabularx}
 \end{table}
 
 
 \begin{table}
-
+\small
 	\caption{Summary of dependent variable and covariates used in the initial model for \prefix{in}}
 	\label{tbl: summary dep variables model 2}
-
-	
-		
-		\resizebox{\textwidth}{!}{%
-			
-			\begin{tabular}{lrrrrr}
+			\begin{tabularx}{\textwidth}{QSSSSS[table-format=3.0]}
 				\lsptoprule
-				Dependent Variable                   & Mean  & St. Dev. & Min & Max& N\\ 
-				\midrule
-				\textsc{AbsoluteConsonantDuration}      & 76 & 27 & 20 & 170  & 156\\ 
-				
-				\midrule
-				Numerical Predictors & Mean  & St. Dev. & Min & Max& N\\ 
-				\midrule
-				
-				
+				{Dependent variable}  &       {Mean}  & {St. Dev.} &     {Min}      & {Max}& {N}\\\midrule
+				\textsc{AbsoluteConsonantDuration}      & 76 & 27 & 20 & 170  & 156\\\midrule
+				{Numerical predictors} &       {Mean}  & {St. Dev.} &     {Min}      & {Max}& {N}\\\midrule
 				\textsc{SemanticTransparencyRating}  & 2.518 & 1.108 & 1 & 4 &156 \\
-				log\textsc{RelativeFrequency}         & 3.599 & 4.742 & $-$9.670 & 10.490 & 156\\ 
-				\textsc{LSAScore}          &  0.255 & 0.163 & $-$0.040& 0.680& 56\\ 
+				log\textsc{RelativeFrequency}         & 3.599 & 4.742 & -9.670 & 10.490 & 156\\ 
+				\textsc{LSAScore}          &  0.255 & 0.163 & -0.040& 0.680& 56\\ 
 				\textsc{LocalSpeechRate}          & 14.290 & 3.666 & 5.279& 24.320  & 156\\ 
 				\textsc{PrecedingSegmentDuration}               & 60 & 26 & 0  & 127 & 156\\ 
 				log\textsc{WordFormFrequency}       & 8.582 &  1.774 & 1.609&  10.700  & 156\\ 
-				
 				\midrule
-				Categorical Predictors & Levels &   &  &   &N \\ 
-				\midrule
-				\textsc{Environment}       & \texttt{m\#mV}: 89& \texttt{m\#C}: 67&  & & 156\\ 
-				\textsc{SemanticTransparencyBinary}        & \texttt{opaque}: 105 & \texttt{transparent}: 51 & & &156 \\ 
-				\textsc{TypeOfBase}        &\texttt{bound root}:  124 & \texttt{word}:  32& & &156 \\ 
-				\textsc{Affix}      &\texttt{inLoc}: 70 & \texttt{inNeg}: 86 & & & 156\\ 
-				\textsc{BaseInitialStress}        &\texttt{stressed}: & \texttt{unstressed}: & & &156 \\ 
-				& 117 &  39 & & & \\ 						 
+				\end{tabularx}
+				\begin{tabularx}{\textwidth}{QlrlrS[table-format=3.0]}
+				Categorical predictors & \multicolumn{4}{c}{Levels} & {N}\\\cmidrule(lr){1-1}\cmidrule(lr){2-5}\cmidrule(lr){6-6}
+				\textsc{Environment}       & \texttt{m\#mV}: & 89& \texttt{m\#C}: & 67&   156\\ 
+				\textsc{SemanticTransparencyBinary}        & \texttt{opaque}: & 105 & \texttt{transparent}: & 51 & 156 \\ 
+				\textsc{TypeOfBase}        &\texttt{bound root}: &  124 & \texttt{word}: &  32& 156 \\ 
+				\textsc{Affix}      &\texttt{inLoc}: & 70 & \texttt{inNeg}: & 86 &   156\\ 
+				\textsc{BaseInitialStress}        &\texttt{stressed}: & 117 & \texttt{unstressed}: & 39 & 156 \\ 
 			\lspbottomrule 
-			\end{tabular}
-		}
-	
-
-\end{table}
-
+			\end{tabularx}
+\end{table}\largerpage[3]
 \begin{table}
+\small
 	\caption{Summary of dependent variable and covariates used in the initial model for \prefix{dis}}
 	\label{tbl: summary dep variables model 6}
-	
-		
-		\resizebox{\textwidth}{!}{%
-        
-			\begin{tabular}{lrrrrr}
+			\begin{tabularx}{\textwidth}{QSSSSS[table-format=3.0]}
 				\lsptoprule
-				Dependent Variable                   & Mean  & St. Dev. & Min & Max& N\\ 
-				\midrule
+				{Dependent variable}  &       {Mean}  & {St. Dev.} &     {Min}      & {Max}& {N}\\\midrule
 				\textsc{AbsoluteConsonantDuration}      & 103 & 30 &  49 &  205   & 128\\ 				
 				\midrule
-				
-				Numerical Predictors & Mean  & St. Dev. & Min & Max& N\\ 
-				\midrule
-				
+				{Numerical predictors} &       {Mean}  & {St. Dev.} &     {Min}      & {Max}& {N}\\\midrule
 				\textsc{SemanticTransparencyRating}  &1.68  & 0.98  &1   &4   &128 \\
-				log\textsc{RelativeFrequency}  & 0.044 & 2.938 & $-$8.724 & 9.360 & 128\\ 
-				\textsc{LSAScore}          & 0.271  & 0.202 &$-$0.040 &0.690 & 40\\ 
+				log\textsc{RelativeFrequency}  & 0.044 & 2.938 & -8.724 & 9.360 & 128\\ 
+				\textsc{LSAScore}          & 0.271  & 0.202 &-0.040 &0.690 & 40\\ 
 				\textsc{LocalSpeechRate}  & 13.025 & 3.164 & 5.400 & 22.440 & 128\\ 
 				\textsc{PrecedingSegmentDuration}             & 58 &  19&  27   & 134  & 128\\ 
 				log\textsc{WordFormFrequency}    & 7.875 & 1.736 & 1.099 & 10.738 & 128\\ 
 				\midrule
-				
-				Categorical Predictors& Levels &   &  &   & N\\ 
-				\midrule
-				\textsc{Environment}       & \texttt{s\#sV} : 24& \texttt{s\#C}: 45 & \texttt{s\#V}: 59 & &128 \\ 
-				\textsc{SemanticTransparencyBinary}        & \texttt{opaque}: 54 & \texttt{transparent}: 74 & & & 128\\ 
-				\textsc{TypeOfBase}        &\texttt{bound root}: 18 & \texttt{word}: 110 & & &128 \\ 			
-				\textsc{BaseInitialStress}        &\texttt{stressed}:  & \texttt{unstressed}:  & & & 128\\ 
-				& 88& 40  & & & \\ 					
-				\textsc{Voicing}        &\texttt{voiced}: 24   & \texttt{voiceless}: 104 & & & 128\\ 				 			
+				\end{tabularx}
+				\begin{tabularx}{\textwidth}{QlrlrlrS[table-format=3.0]}
+				Categorical predictors & \multicolumn{6}{c}{Levels} & {N}\\\cmidrule(lr){1-1}\cmidrule(lr){2-7}\cmidrule(lr){8-8}
+				\textsc{Environment}       & \texttt{s\#sV} : &24& \texttt{s\#C}: & 45 & \texttt{s\#V}: & 59 & 128 \\ 
+				\textsc{SemanticTranspar-\linebreak encyBinary}        & \texttt{opaque}: &54 & \texttt{transparent}: &74 & & & 128\\ 
+				\textsc{TypeOfBase}        &\texttt{bound root}: &18 & \texttt{word}: &110 & & & 128 \\ 			
+				\textsc{BaseInitialStress}        &\texttt{stressed}: &88  & \texttt{unstressed}: &40 & & & 128\\ 
+				\textsc{Voicing}        &\texttt{voiced}: &24   & \texttt{voiceless}: &104 & & & 128\\
 			\lspbottomrule 
-			\end{tabular}}
-	
+			\end{tabularx}
 \end{table}
 
 
 
 \begin{table}
+\small
 	\caption{Summary of dependent variable and covariates used in the initial model for \suffix{ly}}
 	\label{tbl: corpus summary varables ly}
-	
-		
-		\resizebox{\textwidth}{!}{%
-			
-			\begin{tabular}{lrrrrr}
+			\begin{tabularx}{\textwidth}{QSSSSS[table-format=3.0]}
 				\lsptoprule
-				Dependent Variable                   & Mean  & St. Dev. & Min & Max& N\\ 
+				{Dependent variable}  &       {Mean}  & {St. Dev.} &     {Min}      & {Max}& {N}\\\midrule
+				\textsc{AbsoluteConsonantDuration}      & 43 & 22&  5 &  111 &154 \\ 
 				\midrule
-				\textsc{AbsoluteConsonantDuration}      & 43 & 22&  5 &  111 &154 \\ 		
-				
-				\midrule
-				
-				Numerical Predictors & Mean  & St. Dev. & Min & Max&N \\ 
-				\midrule
-				
+				{Numerical predictors} &       {Mean}  & {St. Dev.} &     {Min}      & {Max}& {N}\\\midrule
 				%\textsc{SemanticTransparencyRating}  & 1 & 0.225  &   1&   3& 154\\
-				log\textsc{RelativeFrequency}  & $-$0.643 &2.721 & $-$6.294 &  8.656& 154\\ 				
-				\textsc{LSAScore}      & 0.358   &0.210 & $-$0.030& 0.870& 118\\ 				
+				log\textsc{RelativeFrequency}  & -0.643 &2.721 & -6.294 &  8.656& 154\\ 				
+				\textsc{LSAScore}      & 0.358   &0.210 & -0.030& 0.870& 118\\ 				
 				\textsc{LocalSpeechRate}  & 13.540 & 3.477 & 6.418 & 26.010 & 154\\ 
-				
-				\textsc{PrecedingSegmentDuration}          &84 &  37&  13   & 212& 154\\ 
-				
+				\textsc{PrecedingSegmentDuration}          &84 &  37&  13   & 212& 154\\
 				log\textsc{WordFormFrequency}    & 7.277 & 1.943 & 0.693& 12.580 & 154\\ 
-				
 				\midrule
-				
-				Categorical Predictors & Levels &   &  &   & N\\ 
-				\midrule
-				\textsc{Environment}       & \texttt{l\#l} : 33 & \texttt{{syllabic} l\#l}: 48 & \texttt{\#l}: 73 & & 154\\ 
+				\end{tabularx}
+				\begin{tabularx}{\textwidth}{QlrlrlrS[table-format=3.0]}
+				Categorical predictors & \multicolumn{6}{c}{Levels} & {N}\\\cmidrule(lr){1-1}\cmidrule(lr){2-7}\cmidrule(lr){8-8}
+				\textsc{Environment}       & \texttt{l\#l}: &33 & \texttt{{syllabic} l\#l}:& 48 & \texttt{\#l}:& 73 & 154\\ 
 				%\textsc{SemanticTransparencyBinary}        & \texttt{opaque}: 0 & \texttt{transparent}: 154  & & &154 \\ 
 				%\textsc{TypeOfBase}        &\texttt{ bound root}: 1  & \texttt{ word}: 153& & & 154\\ 			
-				\textsc{BaseFinalStress}        &\texttt{stressed}:  & \texttt{unstressed}:  & & & 154\\ 
-				& 35& 119  & & & \\ 					
-				\textsc{PrecedingSegment}        &\texttt{consonant}: 109 & \texttt{vowel}: 145 & & &154 \\ 				\lspbottomrule 
-			\end{tabular}
-		}
-	
+				\textsc{BaseFinalStress}        &\texttt{stressed}: &35  & \texttt{unstressed}: &119 & & & 154\\ 
+				\textsc{PrecedingSegment}        &\texttt{consonant}: &109 & \texttt{vowel}: & 145 & & &  154 \\
+				\lspbottomrule 
+			\end{tabularx}
 \end{table}
 
 \chapter{Overview of tested interactions in corpus study}\label{Appendix C: Summaries of tested interactions in corpus study}
@@ -722,7 +677,7 @@ unoriginal    &                  &                 &                & hollowly  
 \section{{un-}}
 
 
-\begin{table}
+\begin{table}[H]
 	\caption{Summary of model for variables predicting the duration of [n] in \prefix{un}prefixed words\label{model un complex experiment}}
 	\resizebox{\textwidth}{!}{\begin{tabular}{lSSSSSS}
 	\lsptoprule
@@ -745,7 +700,7 @@ unoriginal    &                  &                 &                & hollowly  
 
 
 
-\begin{table}
+\begin{table}[H]
 			\caption[]{Summary of model for variables predicting the duration of [n] in complete \prefix{un}data set}
 \label{model un complete experiment}
 	\resizebox{\textwidth}{!}{\begin{tabular}{lSSSSSS}
@@ -787,7 +742,7 @@ unoriginal    &                  &                 &                & hollowly  
 
 
 
-\begin{table}
+\begin{table}[H]
 	\caption{Summary of model for variables predicting the duration of [n] in \prefix{in}prefixed words\label{model in complex experiment}}
 		\resizebox{\textwidth}{!}{%
 	\begin{tabular}{lSSSSSS}
@@ -813,7 +768,7 @@ unoriginal    &                  &                 &                & hollowly  
 \end{table}
 
 
-\begin{table}
+\begin{table}[H]
 	\caption{Summary of model for variables predicting the duration of [n] in complete \prefix{in}data set\label{model in complete experiment}}
 \resizebox{\textwidth}{!}{%
 	\begin{tabular}{lSSSSSS}
@@ -865,7 +820,7 @@ unoriginal    &                  &                 &                & hollowly  
 
 \section{{im-}}
 
-\begin{table}
+\begin{table}[H]
 	\caption{Summary of model for variables predicting the duration of [m] in \prefix{im}prefixed words\label{model im complex experiment}}	
 		\resizebox{\textwidth}{!}{%
 	\begin{tabular}{lSSSSSS}
@@ -888,7 +843,7 @@ unoriginal    &                  &                 &                & hollowly  
 
 
 
-\begin{table}
+\begin{table}[H]
 \caption{Summary of model for variables predicting the duration of [m] in \prefix{im}words with PC\label{model im PC Experiment}}
 		\resizebox{\textwidth}{!}{%
 	\begin{tabular}{lSSSSSS}
@@ -913,7 +868,7 @@ unoriginal    &                  &                 &                & hollowly  
 
 
 
-\begin{table}
+\begin{table}[H]
 		\caption{Summary of model for variables predicting the duration of [m] in \prefix{im}words\label{model im complete experiment}}
 		\resizebox{\textwidth}{!}{%
 	\begin{tabular}{lSSSSSS}
@@ -951,7 +906,7 @@ unoriginal    &                  &                 &                & hollowly  
 \section{{un-} and in-}
 
 
-\begin{table}
+\begin{table}[H]
 	\caption{Summary of model for variables predicting nasal duration in \prefix{un} and \prefix{in}prefixed words\label{model in un experiment}}
 \resizebox{\textwidth}{!}{%
 	\begin{tabular}{lSSSSSS}
@@ -1020,7 +975,7 @@ unoriginal    &                  &                 &                & hollowly  
 
 \section{dis-}
 
-\begin{table}
+\begin{table}[H]
 	\caption{Summary of model for variables predicting the duration of [s] in complex \prefix{dis}words\label{model dis complex experiment}}
 		\resizebox{\textwidth}{!}{%
 	\begin{tabular}{lSSSSSS}
@@ -1040,7 +995,7 @@ unoriginal    &                  &                 &                & hollowly  
     \end{table}
 
 
-\begin{table}
+\begin{table}[H]
 	\caption{Summary of model for variables predicting the duration of [s] in \prefix{dis}words\label{model dis complete experiment}}
 		\resizebox{\textwidth}{!}{%
 	\begin{tabular}{lSSSSSS}
@@ -1069,7 +1024,7 @@ unoriginal    &                  &                 &                & hollowly  
 \section{-ly}
 
 
-\begin{table}
+\begin{table}[H]
 		\caption{Summary of model for variables predicting the duration of [l] in \prefix{ly}suffixed words}
 	\label{model ly complex experiment}
 	\resizebox{\textwidth}{!}{%
@@ -1117,7 +1072,7 @@ unoriginal    &                  &                 &                & hollowly  
 
 
 
-\begin{table}
+\begin{table}[H]
 	\caption{Summary of model for variables predicting the duration of [l] in \prefix{ly}words\label{model ly complete experiment}}
 \resizebox{.95\textwidth}{!}{%
 	\begin{tabular}{lSSSSSS}
