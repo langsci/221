@@ -270,17 +270,15 @@ Affixes which differ in their phonological make-up must therefore be investigate
 \end{table*}
 
 \section{Acoustic analyses}\label{Acoustic Analysis}
-\todo[inline]{Please insert a introductory subsection, see the Generic Style Rules}
-%\enlargethispage{\baselineskip}
 After all sound files were extracted from the corpus and the experimental recordings, the data was segmented and phonetically transcribed using the software Praat (\citealt{Boersma.2014}). For each token, the segments of the affix in question, as well as the segments of the syllable immediately following or preceding the affix under investigation, were annotated. \figref{fig:segmentation unneeded} displays an example. As can be seen in the figure, doubles were segmented as one segment. This is because in almost all cases no boundary between the two adjacent consonants was distinguishable. Only for some words in the experimental data a pause was uttered between the affix and the base, i.e. the two consonants were pronounced as two independent segments. These tokens were noted down and will be discussed in \chapref{Experimental Studies}.
 
 \begin{figure*}
-	
 	\fbox{\includegraphics[width=11.5cm ,keepaspectratio]{images/GeneralMethod/segmentationUnneeded.png}}
 	\caption{Segmentation example \textit{unneeded}}
 	\label{fig:segmentation unneeded}
 \end{figure*}
 
+\subsection{Manual versus automatic segmentation}
 There are two possible ways of segmenting speech data, \is{phonetic segmentation}manual segmentation and \isi{automatic segmentation}. Automatic segmentation has the major advantage of demanding a lower workload and less time than \is{phonetic segmentation}manual segmentation. Furthermore, one can expect \isi{automatic segmentation} to be very systematic. This is because \isi{automatic segmentation} relies on forced aligners which are based on algorithms. These algorithms ensure that every file is segmented according to the same criteria. This means, in contrast to \is{phonetic segmentation}manual segmentation, there is no risk of inter-annotator differences.
 
 However, there are also major disadvantages with \isi{automatic segmentation}. The forced aligners used in \isi{automatic segmentation} rely on canonical pronunciations. This means that the forced aligner will always annotate all phonemes represented in the canonical pronunciation of a word, irrespective of whether they were produced by the speaker or not.  Especially in \isi{conversational speech} words are sometimes drastically reduced, i.e not all sounds of a word are produced. This poses a serious problem for \isi{automatic segmentation}. Segments which are not present are annotated by the system.
@@ -294,10 +292,12 @@ To test the accuracy of \isi{automatic segmentation}, i.e. to test whether \isi{
  
 
 In contrast to \isi{automatic segmentation}, \is{phonetic segmentation}manual segmentation is less prone to systematic mistakes and inaccuracies. This is because it does not rely on canonical representations and incremental analyses. It thus allows for more precise annotations than \isi{automatic segmentation}.  However, there are also disadvantages with \is{phonetic segmentation}manual segmentation. 
-First, it is very time-consuming. Second, it is prone to inconsistent, unsystematic boundary setting, as well as to inter-annotator differences. While the possibilities to speed up \is{phonetic segmentation}manual segmentation are very limited, there are various possibilities to prevent inconsistencies and inter-annotator differences. To ensure the reliability and validity of the \is{phonetic segmentation}manual segmentation, I applied the following four strategies: 1.  the development of strict segmentation criteria based on the specifics of each sound, 2.  intensive training of the annotators, 3. segmenting a proportion of the data twice, and 4. testing the influence of the annotator on the segmentation statistically. In the following, I will discuss each strategy in detail.
+First, it is very time-consuming. Second, it is prone to inconsistent, unsystematic boundary setting, as well as to inter-annotator differences. While the possibilities to speed up \is{phonetic segmentation}manual segmentation are very limited, there are various possibilities to prevent inconsistencies and inter-annotator differences. 
+\subsection{Ensuring validity}
+To ensure the reliability and validity of the \is{phonetic segmentation}manual segmentation, I applied the following four strategies: 1.  the development of strict segmentation criteria based on the specifics of each sound, 2.  intensive training of the annotators, 3. segmenting a proportion of the data twice, and 4. testing the influence of the annotator on the segmentation statistically. In the following, I will discuss each strategy in detail.
 
 
-\subsection{The development of strict segmentation criteria}
+\subsubsection{The development of strict segmentation criteria}
 
 The criteria on which the segmentation was based were developed by consulting  the relevant phonetic literature (cf. \citealt{Ladefoged.1996,Johnson.1997b,Ladefoged.2003,Machac.2009,Ladefoged.2011}) and were optimized during the segmentation process. The final criteria will be described in the following. First, I will describe the criteria for the segmentation of the nasals in \is{un-}\prefix{un} and \is{in-} \prefix{in}words. Then, I will give a description of the criteria for fricatives in \is{dis-}\prefix{dis}words. Finally, the criteria for laterals in \is{-ly}\suffix{ly}-words will be given.
 
@@ -329,7 +329,7 @@ The boundary between the preceding vowel and the fricative was set where the wav
 \subsubsection{The lateral in \suffix{ly}-suffixed words} \label{ly-segmentation}
 % Most difficult segment to segment in data set --> a ot of exlcusion
 
-Out of the four consonants investigated in this study, laterals are the most difficult to segment. This is due to the fact that laterals are very similar to vowels regarding their acoustical properties. Thus, it is quite challenging to set a boundary between vowels and laterals (see also \citealt[chapter 7]{Machac.2009} for discussion). However, there are some aspects in which /l/ can be distinguished from vowels. There is less amplitude in the waveforms of laterals than in the one of vowels.  Furthermore, their formant structure is, in contrast to the one of vowels, constant and, due to less energy in the speech signal, the formants of /l/ are in general fainter than the ones of vowels. This is especially the case for higher formants. Since in the suffix -\textit{ly} the lateral is followed by a high vowel, which displays a high level of energy in the upper formants, it is possible to see the formant structure change between /l/ and the following vowel in my data sets. The boundary between /l/ and /i/ was thus set at the point at which the formant structure changed, i.e. the higher formants became more pronounced (see \figref{fig:segmentation solely}). For intervocalic /l/ a visible decrease in the waveform, as well as the change in formant structure was used to mark the beginning of /l/ (see \figref{fig:segmentation solely}).
+Out of the four consonants investigated in this study, laterals are the most difficult to segment. This is due to the fact that laterals are very similar to vowels regarding their acoustical properties. Thus, it is quite challenging to set a boundary between vowels and laterals (see also \citealt[Chapter 7]{Machac.2009} for discussion). However, there are some aspects in which /l/ can be distinguished from vowels. There is less amplitude in the waveforms of laterals than in the one of vowels.  Furthermore, their formant structure is, in contrast to the one of vowels, constant and, due to less energy in the speech signal, the formants of /l/ are in general fainter than the ones of vowels. This is especially the case for higher formants. Since in the suffix -\textit{ly} the lateral is followed by a high vowel, which displays a high level of energy in the upper formants, it is possible to see the formant structure change between /l/ and the following vowel in my data sets. The boundary between /l/ and /i/ was thus set at the point at which the formant structure changed, i.e. the higher formants became more pronounced (see \figref{fig:segmentation solely}). For intervocalic /l/ a visible decrease in the waveform, as well as the change in formant structure was used to mark the beginning of /l/ (see \figref{fig:segmentation solely}).
  
 \begin{figure*}  
 	
@@ -366,12 +366,12 @@ The criteria described above allowed for a valid and reliable segmentation of /l
 
 
 
-\subsection{Intensive training of the annotators}
+\subsubsection{Intensive training of the annotators}
 % training
 
 The corpus data was segmented by five annotators. The experimental data was segmented by six. The reliability of the segmentation criteria was verified by a set of trial segmentations.  In these trials the annotators segmented the same 30 items. If boundaries differed by more than 10 milliseconds, the annotators discussed the discrepancy and refined the criteria in order to reduce inter-annotator variation. The trial segmentations were repeated two times until all boundaries were reliably placed with only small variations, i.e. variations within 10 ms. For the final measurement, each annotator worked on a disjunct set of items. If an annotator was not confident concerning the segmentation of an item, the item was discussed with all annotators. Items which could not be validly segmented were excluded. This was the case for several of the corpus items due to the poor quality of the sound files, as well as for various items including /l/. \\%All in all ...items were excluded from the corpus data, and ...items were excluded from the experimental data.
 
-\subsection{Segmenting a proportion of the data twice}
+\subsubsection{Segmenting a proportion of the data twice}
 
 To further ensure reliability, 10~\% of each annotator's items were segmented by a second annotator. These 10~\% were then compared. Discrepancies between the segmentations were discussed and systematic mistakes were detected. To correct these mistakes, and to avoid them in future codings, the segmentation criteria were clarified and enhanced. The annotators revised all previous segmentations according to the enhanced criteria.
 
@@ -410,10 +410,10 @@ Multiple regression was used since it is an established and highly successful wa
 
 % 2 problems - what is \isi{collinearity}
 However, \is{multiple regression}multiple regression models also entail some statistical problems that need to be addressed. Two of them are especially relevant for the present analyses: \isi{collinearity} and \isi{overfitting}. Let us first discuss \isi{collinearity}.
-A number of measurements I would like to include in the models are correlated, for example the number of segments in the word and word duration. A word which has more segments is most likely also longer in terms of duration. This can lead to serious problems in \is{regression model}{regression models} (\is{collinearity}{\textit{multicollinearity}}, for example, \citealt[chapter 6]{Baayen.2008}).  If one of the two variables has an influence on consonant duration, so will the other. This makes it difficult for the model to tease apart the individual explanatory power of each of the two variables. 
+A number of measurements I would like to include in the models are correlated, for example the number of segments in the word and word duration. A word which has more segments is most likely also longer in terms of duration. This can lead to serious problems in \is{regression model}{regression models} (\is{collinearity}{\textit{multicollinearity}}, for example, \citealt[Chapter 6]{Baayen.2008}).  If one of the two variables has an influence on consonant duration, so will the other. This makes it difficult for the model to tease apart the individual explanatory power of each of the two variables. 
 
 % How to deal with \isi{collinearity}
-There are several possible strategies to deal with \isi{collinearity}. One strategy is to include only one of the correlating variables.  This is a conservative and safe strategy, which may, however, decrease the power of the model. If \isi{collinearity} only affects noise variables, i.e. variables which are known to affect the dependent variable but whose effect is not of primary interest for a study, another option is to keep the correlating variables in the model but not interpret their individual contribution to the model (cf. \citealt{Wurm.2014}). A third strategy is to combine factors. The two variables \textsc{NumberOfSegmentsInTheWord } and \textsc{WordDuration}, for example, can be combined by calculating the variable \textsc{SpeechRate}, which is computed by dividing word duration by the number of segments. Another possibility of combining factors is by conducting a principal components analysis. In this type of analysis the dimensionality of the data is reduced by transforming the different variables into so-called principal components. The transformation results in linear combinations of the predictors, i.e. the principal components, that are uncorrelated with each other (see, for example, \citealt[chapter 5.1]{Baayen.2008}; \citealt[chapter 12]{Venables.2011}). To address potential \isi{collinearity} problems, I applied all of the strategies mentioned above. 
+There are several possible strategies to deal with \isi{collinearity}. One strategy is to include only one of the correlating variables.  This is a conservative and safe strategy, which may, however, decrease the power of the model. If \isi{collinearity} only affects noise variables, i.e. variables which are known to affect the dependent variable but whose effect is not of primary interest for a study, another option is to keep the correlating variables in the model but not interpret their individual contribution to the model (cf. \citealt{Wurm.2014}). A third strategy is to combine factors. The two variables \textsc{NumberOfSegmentsInTheWord } and \textsc{WordDuration}, for example, can be combined by calculating the variable \textsc{SpeechRate}, which is computed by dividing word duration by the number of segments. Another possibility of combining factors is by conducting a principal components analysis. In this type of analysis the dimensionality of the data is reduced by transforming the different variables into so-called principal components. The transformation results in linear combinations of the predictors, i.e. the principal components, that are uncorrelated with each other (see, for example, \citealt[Chapter 5.1]{Baayen.2008}; \citealt[Chapter 12]{Venables.2011}). To address potential \isi{collinearity} problems, I applied all of the strategies mentioned above. 
 
 
  % \isi{overfitting}
@@ -557,7 +557,7 @@ Examples of transparent words are \textit{unnatural} and \textit{impossible}. Wo
 
 I conducted two separate ratings, one for the corpus study and one for the experimental study. Since the corpus study investigates American English, the rating of the corpus data was done by native speakers of American English. For the experimental study, the participants of the production experiment, who were native speakers of British English, rated the items. 
 In the corpus study, the medians of the ratings for each type were coded in the variable \textsc{SemanticTransparencyRating}. Since in the experimental study each recorded token was rated by the speakers themselves, it was possible to test the effect of the rating of each token directly.
-The design of the ratings, as well as their outcomes, i.e. their distributions and the results of the reliability tests, will be discussed further in the pertinent chapters.\todo{Please be more specific}
+The design of the ratings, as well as their outcomes, i.e. their distributions and the results of the reliability tests, will be discussed further in \sectref{decomposability rating corpus} and~\ref{sec:decomprating}.
 
 
 \subsubsection{Type of base} 
@@ -648,7 +648,7 @@ Stress was thus coded with regard to the affix-adjacent syllable. For prefixes, 
 
 \subsection{Noise variables: Lexical factors}
 \subsubsection{Word form frequency}
-Frequency has been shown to affect the duration of a word. More frequent words tend to have shorter durations (see, for example, \citealt{Aylett.2004}; \citealt{Gahl.2008}). Frequency was therefore included as a covariate. I collected two different types of \isi{frequency}, \isi{word form frequency} and word \isi{lemma frequency}. 
+Frequency has been shown to affect the duration of a word. More frequent words tend to have shorter durations (see, for example, \citealt{Aylett.2004,Gahl.2008}). Frequency was therefore included as a covariate. I collected two different types of \isi{frequency}, \isi{word form frequency} and word \isi{lemma frequency}. 
 The \is{frequency}frequencies for the corpus study were extracted from \is{Corpus of Contemporary American English (COCA)} {COCA} (\citealt{Davies.20082014}). The \is{frequency}frequencies for the experimental study were taken from the \is{British National Corpus (BNC)}BNC (\citealt{Davies.2004}).
 Preliminary inspection of the data revealed that the two \isi{frequency} measurements highly correlate. This means that it essentially does not make a difference whether one tests the influence of \isi{word form frequency} or lemma \isi{frequency} on duration. Hence, only one was included in the models: \textsc{WordFormFrequency}. I log-transformed this variable before it entered the models.
 
