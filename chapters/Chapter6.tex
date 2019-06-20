@@ -54,21 +54,21 @@ Some of the tokens sampled had to be removed after closer inspection of the soun
         \lsptoprule
                         &         &  Number of & Number of\\
             Environment & Example &  \multicolumn{1}{c}{Types} & \multicolumn{1}{c}{Tokens}\\\midrule	
-			\multicolumn{4}{l}{un-}\\\midrule
+			\multicolumn{4}{l}{\itshape un-}\\\midrule
 			n\#nV&\textit{unnatural} & 6 & 23\\ 
 			n\#C&\textit{untold} & 53 & 68\\ 
 			n\#V&\textit{uneven} & 42 & 67\\
 			Total&  & 101 & 158\\\midrule
-			\multicolumn{4}{l}{in-}\\\midrule 
+			\multicolumn{4}{l}{\itshape in-}\\\midrule 
 			m\#mV&\textit{immortal} & 16 & 89\\ 
 			m\#C&\textit{impossible} & 67 & 67\\   
 			Total&  & 83 & 156\\\midrule
-			\multicolumn{4}{l}{dis-}\\\midrule   	
+			\multicolumn{4}{l}{\itshape dis-}\\\midrule   	
 			s\#sV&\textit{dissatisfied} & 9 & 24\\ 
 			s\#C&\textit{disgrace} & 21 & 45\\ 
 			s\#V&\textit{disarm} & 34 & 59\\
 			Total&  & 64 & 128\\\midrule
-			\multicolumn{4}{l}{-ly}\\\midrule   	
+			\multicolumn{4}{l}{\itshape -ly}\\\midrule   	
 			non-\is{syllabicity}syllabic l\#l &\textit{really} & 29  & 33 \\ 
 			\is{syllabicity}syllabic 	l\#l &\textit{ment(a)lly} & 48 & 48 \\ 
 			\#l &\textit{possibly} & 73 & 73\\
@@ -409,22 +409,16 @@ After having looked at each \isi{decomposability} measure individually, let us n
 	\caption{Segmentability hierarchies for each decomposability measure}
 	\label{tbl:summary comparison of affix}
 			\resizebox{\textwidth}{!}{%
-		\begin{tabular} {lrcrcrcrcr}
+		\begin{tabular} {lr@{ }c@{ }r@{ }c@{ }r@{ }c@{ }r@{ }c@{ }r}
 			\lsptoprule
 			Decomposability measure& & &&&&& &&\\
 			\midrule
-			\textsc{SemanticTransparency}  &\{\prefix{un} &, &\suffix{ly}\}  &>&   \prefix{in}\textsubscript{\textsc{Neg}}  &>&  \prefix{dis}  &>&\prefix{in}\textsubscript{\textsc{Loc}}  \\		
-			
-			\textsc{SemanticTransparencyRating }&\prefix{un}  &>& \suffix{ly}  &>&   \prefix{in}\textsubscript{\textsc{Neg}}   &>&\prefix{dis}  &>&  \prefix{in}\textsubscript{\textsc{Loc}}  \\	
-			
-			\textsc{TypeOfBase} &\{\prefix{un} &, &\suffix{ly}\}  &>&   \{\prefix{in}\textsubscript{\textsc{Neg}}  &,&  \prefix{dis}\}  &>&\prefix{in}\textsubscript{\textsc{Loc}}  \\	
-			
-			log\textsc{RelativeFrequency}&\suffix{ly} &> &  \prefix{un}  &> &   \prefix{in}\textsubscript{\textsc{Neg}}&> &  \prefix{dis}     &> &\prefix{in}\textsubscript{\textsc{Loc}}  \\				
-			
-			\textsc{Cat.RelativeFrequency}&\suffix{ly} &> &  \prefix{un}  &> &   \prefix{in}\textsubscript{\textsc{Neg}}&> &  \prefix{dis}     &> &\prefix{in}\textsubscript{\textsc{Loc}}  \\				
-			
-			\textsc{LSAScore}&\suffix{ly} &> &  \prefix{un}  &> &   \prefix{in}\textsubscript{\textsc{Neg}}&> &  \prefix{dis}     &> &\prefix{in}\textsubscript{\textsc{Loc}}  \\				
-			
+			\textsc{SemanticTransparency}  &\{\prefix{un} &, &\suffix{ly}\}  &>&   \prefix{in}\textsubscript{\textsc{Neg}}  &>&  \prefix{dis}\phantom{\}}  &>&\prefix{in}\textsubscript{\textsc{Loc}}  \\
+			\textsc{SemanticTransparencyRating }&\prefix{un}  &>& \suffix{ly}\phantom{\}}  &>&   \prefix{in}\textsubscript{\textsc{Neg}}   &>&\prefix{dis}\phantom{\}}  &>&  \prefix{in}\textsubscript{\textsc{Loc}}  \\
+			\textsc{TypeOfBase} &\{\prefix{un} &, &\suffix{ly}\}  &>&   \{\prefix{in}\textsubscript{\textsc{Neg}}  &,&  \prefix{dis}\}  &>&\prefix{in}\textsubscript{\textsc{Loc}}  \\
+			log\textsc{RelativeFrequency}&\suffix{ly} &> &  \prefix{un}  &> &   \prefix{in}\textsubscript{\textsc{Neg}}&> &  \prefix{dis}\phantom{\}}     &> &\prefix{in}\textsubscript{\textsc{Loc}}  \\
+			\textsc{Cat.RelativeFrequency}&\suffix{ly} &> &  \prefix{un}  &> &   \prefix{in}\textsubscript{\textsc{Neg}}&> &  \prefix{dis}\phantom{\}}     &> &\prefix{in}\textsubscript{\textsc{Loc}}  \\
+			\textsc{LSAScore}&\suffix{ly} &> &  \prefix{un}  &> &   \prefix{in}\textsubscript{\textsc{Neg}}&> &  \prefix{dis}\phantom{\}}     &> &\prefix{in}\textsubscript{\textsc{Loc}}  \\
 			\lspbottomrule                                                                                
 		\end{tabular}}
 	
@@ -1017,7 +1011,7 @@ With regard to \textsc{Voicing}, it is important to note that the distribution o
 The interaction between \textsc{Environment} and \textsc{BaseInitialStress} is displayed in \figref{fig:corpus main effect 1 dis}. The left panel of the figure displays the estimated effect of \textsc{Environment} on words with a \is{stress}stressed base-initial syllable. The right panel shows the estimated effect of \textsc{Environment} on words with an unstressed base-initial syllable. The figure shows that while there is a significant effect of \textsc{Environment} for words with a \is{stress}stressed base-initial syllable, there is no significant effect for words with an unstressed base-initial syllable. For words with a \is{stress}stressed base-initial syllable, doubles are estimated to be 38 ms  longer than singletons which are followed by a consonant, and 23 ms longer than singletons which are followed by a vowel. 
 The difference in duration between the two singleton levels is marginally significant (p-value: $0.066$). The fricative before a consonant is predicted to be 15ms shorter than the fricative before a vowel.  There is no difference between the three environments for words with an unstressed base-initial syllable, i.e. doubles are of the same duration as singletons, and the two singleton levels are  also of the same duration. 
 
-One could interpret the interaction between \textsc{Environment} and \textsc{BaseInitialStress} as evidence that the prefix \is{dis-}\prefix{dis} only geminates when followed by a \is{stress}stressed syllable, and that only in this condition the following segment, i.e. consonant or vowel, affects the duration of the prefixal consonant. However, there are two problems with the pertinent interaction, and the interpretation of the effects is therefore not that straightforward. Both problems are related to the distribution of variables in the data set. 
+One could interpret the interaction between \textsc{Environment} and \textsc{BaseInitialStress} as evidence that the prefix \is{dis-}\prefix{dis} only geminates when followed by a \is{stress}stress\-ed syllable, and that only in this condition the following segment, i.e. consonant or vowel, affects the duration of the prefixal consonant. However, there are two problems with the pertinent interaction, and the interpretation of the effects is therefore not that straightforward. Both problems are related to the distribution of variables in the data set. 
 
 %first problem
 The first problem is the number of types and tokens for each category. The blue lines on the bottom of the plot (in \figref{fig:corpus main effect 1 dis}), the rugs, indicate the number of tokens for each category. It is striking that there are only three tokens with an unstressed base-initial syllable and a double consonant at the morphological boundary. These three tokens are all of the same type, i.e. \textit{dissolution}. The interaction found in the model is hence caused by only three observations (of one type). In other words, there are only three tokens with a double consonant which do not geminate. All three tokens are of the type \textit{dissolution}. 
@@ -1032,10 +1026,10 @@ is related to the distribution of the variable \textsc{Voicing}.
   
   
   
-  To test whether the effects of \textsc{Environment} and \textsc{BaseInitialSyllable} are affected by the distribution of voiced items in the data set, and to also test the effect of \textsc{SemanticTransparency} without the possible harming influence of the variable \textsc{Voicing}, an additional model was fitted to the \is{dis-}\prefix{dis}data set. In this model only voiceless \is{dis-}\prefix{dis}prefixed words were included. The model included 104 observations, i.e. 24 voiced \is{dis-}\prefix{dis}prefixed words were excluded. 
+  To test whether the effects of \textsc{Environment} and \textsc{BaseInitialSyllable} are affected by the distribution of voiced items in the data set, and to also test the effect of \textsc{SemanticTransparency} without the possible harming influence of the variable \textsc{Voicing}, an additional model was fitted to the \is{dis-}\prefix{dis}data set. In this model only voiceless \is{dis-}\prefix{dis}prefixed words were included. The model included 104 observations, i.e. 24 voiced \is{dis-}\prefix{dis}prefixed words were excluded.\largerpage[-1]
   
  
-\begin{table}
+\begin{table}[b]
 	\caption{Summary of linear model for variables predicting the Box-Cox-transformed duration of [s] in \prefix{dis}prefixed words with voiceless /s/\label{tbl: summary model6}}
 	\resizebox{\textwidth}{!}{%		
 		\begin{tabular}{lSSSS[table-format=<1.3]}
@@ -1084,7 +1078,7 @@ As in the model with all \is{dis-}\prefix{dis}prefixed words, \textsc{LocalSpeec
 
 
 
-The voiceless model shows an interaction between the two variables \textsc{Semantic-Transparency} and \textsc{BaseInitialStress}. This interaction can be seen in \figref{fig:corpus main effect 2 dis without voiced items}. The left panel shows the effect of \textsc{SemanticTransparency} for items with a \is{stress}stressed base-initial syllable, the right panel shows the effect for items with an unstressed base-initial syllable. When the base-initial syllable is \is{stress}stressed, there is no difference between opaque and transparent items. When the base-initial syllable is unstressed, the fricative in opaque items is predicted to be 42 ms shorter than the fricative in transparent items. However, as in the complete model one must be cautious to  interpret this interaction. There are only four opaque tokens with an unstressed base-initial syllable in the data set. These four tokens cause the interaction, i.e. in these four tokens the fricative is significantly shorter than in all other tokens. 
+The voiceless model shows an interaction between the two variables \textsc{Seman\-tic-Transparency} and \textsc{BaseInitialStress}. This interaction can be seen in \figref{fig:corpus main effect 2 dis without voiced items}. The left panel shows the effect of \textsc{SemanticTransparency} for items with a \is{stress}stressed base-initial syllable, the right panel shows the effect for items with an unstressed base-initial syllable. When the base-initial syllable is \is{stress}stressed, there is no difference between opaque and transparent items. When the base-initial syllable is unstressed, the fricative in opaque items is predicted to be 42 ms shorter than the fricative in transparent items. However, as in the complete model one must be cautious to  interpret this interaction. There are only four opaque tokens with an unstressed base-initial syllable in the data set. These four tokens cause the interaction, i.e. in these four tokens the fricative is significantly shorter than in all other tokens. 
 Crucially, three of the four tokens are of the type \textit{dissolution}. This means that, even though we find two different interactions in the two \is{dis-}\prefix{dis}models (\textsc{BaseInitialStress} and \textsc{Environment} in the complete model vs. \textsc{BaseInitialStress} and \textsc{SemanticTransparency} in the voiceless model), the same tokens which cause the interaction in the complete model cause the interaction in the model with only voiceless items. It remains unclear whether the short fricative in the pertinent words is due to the unstressed base-initial syllable in combination with \isi{semantic opacity}, or whether the pertinent words behave differently because the \isi{stress} status of the base-initial syllable is crucial for \isi{gemination} with \is{dis-}\prefix{dis}, i.e. only words with a \is{stress}stressed base-initial syllable geminate, or whether the shorter fricative duration is caused by type-specific effects. 
 
 
@@ -1095,7 +1089,7 @@ The \is{principal component analysis}principal component analysis included the f
 
 
 
-\tabref{tbl: summary PC discorpus} shows a summary of the principal components. The first \is{principal component analysis}principal component accounts for most of the variance and is composed more or less equally of all measures. The second component is dominated by \textsc{TypeOfBase} and log\textsc{RelativeFrequency}, the third component mostly represents \textsc{SemanticTransparency}, \textsc{TypeOfBase} and log\textsc{RelativeFrequency}, and the fourth is mostly composed of \textsc{SemanticTransparency} and \textsc{SemanticTransparencyRating}. The second and the third component explain much less variance than the first, and the last \is{principal component analysis}principal component explains barely any variance. The first three principal components were included in the model.
+\tabref{tbl: summary PC discorpus} shows a summary of the principal components. The first \is{principal component analysis}principal component accounts for most of the variance and is composed more or less equally of all measures. The second component is dominated by \textsc{TypeOfBase} and log\textsc{RelativeFrequency}, the third component mostly represents \textsc{SemanticTransparency}, \textsc{TypeOfBase} and log\textsc{RelativeFrequency}, and the fourth is most\-ly composed of \textsc{SemanticTransparency} and \textsc{SemanticTransparencyRating}. The second and the third component explain much less variance than the first, and the last \is{principal component analysis}principal component explains barely any variance. The first three principal components were included in the model.
 
 
 
@@ -1104,8 +1098,8 @@ After model simplification none of the principal components remained in the mode
 
 \begin{table*}
 	\caption{Summary of principal components\label{tbl: summary PC discorpus}}
-		\resizebox{\textwidth}{!}{%		
-			\begin{tabular}{lSSSS}
+% 		\resizebox{\textwidth}{!}{%
+			\begin{tabular}{lS[table-format=1.3]S[table-format=1.3]S[table-format=1.3]S[table-format=1.3]}
 			\lsptoprule
 				& {PC1}&          {PC2} &       {PC3}       & {PC4}   \\\midrule
 			\multicolumn{5}{l}{Composition of principal components}\\
@@ -1118,7 +1112,7 @@ After model simplification none of the principal components remained in the mode
 				\multicolumn{5}{l}{Variance explained by principal components}\\\midrule
 				Proportion of Variance &0.679& 0.174& 0.105& 0.042\\
 				\lspbottomrule
-			\end{tabular}}
+			\end{tabular}%}
 \end{table*}
 
 %Mumin voiced
@@ -1163,7 +1157,7 @@ In contrast to the \isi{absolute duration} model, the \isi{relative duration} mo
 The effect of \textsc{BaseInitialStress} on \isi{relative duration} with \is{dis-}\prefix{dis} deviates from the effect of \textsc{BaseInitialStress} on \isi{relative duration} with \is{in-}\prefix{in}. For \is{in-}\prefix{in}, we find shorter relative durations before \is{stress}stressed syllables than before unstressed syllables. This effect was explained by reference to the preceding vowel duration in \is{in-}\prefix{in}. There are different possibilities for the deviating results between \is{in-}\prefix{in} and \is{dis-}\prefix{dis}. It might for example be that inherent durational differences between the consonants, i.e. /m/ vs. /s/, led to different results. Another possibility is that preceding vowel durations differ between \is{in-}\prefix{in} and \is{dis-}\prefix{dis}.
           
 
- The final \isi{relative duration} model shows a significant effect of \textsc{SemanticTrans-parency}. Transparent items are predicted to have shorter fricatives than opaque items. This is an unexpected effect, which is not found in \isi{absolute duration}, and one must be cautious to interpret the effect. 
+\hspace*{-0.67183pt}The final \isi{relative duration} model shows a significant effect of \textsc{SemanticTrans\-parency}. Transparent items are predicted to have shorter fricatives than opaque items. This is an unexpected effect, which is not found in \isi{absolute duration}, and one must be cautious to interpret the effect. 
  As discussed above, there is a close and complex relation between the variables \textsc{Voicing} and \textsc{SemanticTransparency}. This relation might have caused the surprising result. To see whether this is the case, an additional model with only voiceless items was fitted. The model is displayed in \tabref{tbl: summary model7}.
  With an R-squared of $0.204$, the model explains 20\% of the data. This is less than any other model fitted to the \is{dis-}\prefix{dis}data set. Only one variable remained significant in the model, \textsc{Environment}. The fricative in \texttt{s\#sV}-structures is longer than the fricative in \texttt{s\#C}- and \texttt{s\#V}-structures. In other words, the model again shows that \is{dis-}\prefix{dis} geminates. 
  Crucially, \textsc{SemanticTransparency} does not reach significance in the model. One can therefore conclude that the effect found in the complete model is probably caused by the distribution of voicing in the data set. In other words, the effect is not stable and therefore not trustworthy.
@@ -1183,12 +1177,12 @@ The effect of \textsc{BaseInitialStress} on \isi{relative duration} with \is{dis
     		\end{tabular}
 \end{table}
 
-After fitting the model with the individual \is{decomposability measure}decomposability measures, the model with the principal components was fitted. After simplification, the principal component model showed similar effects as the model with the individual \is{decomposability measure}decomposability measures (see \tabref{model im PC Corpus abs} in \hyperref[Appendix D: model summaries corpus]{Appendix D} for model summary). The effects of \textsc{Environment} and \textsc{Voicing} are identical. However, instead of the variables \textsc{BaseInitialStress} and \textsc{SemanticTransparency}, this model includes the variable \textsc{PC1}. 
+After fitting the model with the individual \is{decomposability measure}decomposability measures, the\linebreak model with the principal components was fitted. After simplification, the principal component model showed similar effects as the model with the individual \is{decomposability measure}decomposability measures (see \tabref{model im PC Corpus abs} in \hyperref[Appendix D: model summaries corpus]{Appendix D} for model summary). The effects of \textsc{Environment} and \textsc{Voicing} are identical. However, instead of the variables \textsc{BaseInitialStress} and \textsc{SemanticTransparency}, this model includes the variable \textsc{PC1}. 
 The effect of \textsc{PC1} is shown in \figref{fig:PC1 dis Corpus}. 
 
 
 \begin{figure*}
-	\includegraphics [scale=0.4] {images/Corpus/disPCAbsPC4.png}
+	\includegraphics [scale=0.5] {images/Corpus/disPCAbsPC4.png}
 	\caption{Effect of PC1 on relative consonant duration in complete \prefix{dis}data set}
 	\label{fig:PC1 dis Corpus}
 \end{figure*}
@@ -1197,7 +1191,7 @@ The effect of \textsc{PC1} is shown in \figref{fig:PC1 dis Corpus}.
 The higher the value of \textsc{PC1}, the longer the \isi{relative duration} of the fricative. As explained above, \textsc{PC1} is composed of all \is{decomposability measure}decomposability measures. The higher the \textsc{PC1}-value, the less decomposable a word is.
  One can thus interpret the effect of \textsc{PC1} in the following way: the less decomposable a derivative, the longer the \isi{relative duration} of /s/. This is unexpected with regard to the \isi{decomposability} predictions. It is, however, somewhat expected with regard to the results from the complete \isi{relative duration} model, in which \is{semantic transparency}semantically transparent words are predicted to have shorter fricatives than semantically opaque words. As discussed above, this effect might be caused by the distribution of certain properties among types and tokens in the subset, and one must therefore be cautious with the interpretation of the effect. All in all, one can state that the principal component model shows similar effects as the model with the individual \is{decomposability measure}decomposability measures, and that the interpretation of the \isi{decomposability} effect is yet unclear.
 
-As for \isi{absolute duration}, two \isi{multi-model inferencing} analyses were conducted to identify the most important variables for predicting \isi{relative duration} with \is{dis-}\prefix{dis}, one for the complete data set and one for the voiceless data set. 
+As for \isi{absolute duration}, two \isi{multi-model inferencing} analyses were conduct\-ed to identify the most important variables for predicting \isi{relative duration} with \is{dis-}\prefix{dis}, one for the complete data set and one for the voiceless data set. 
  As in the \isi{absolute duration} models, \textsc{Environment} is clearly the most important variable in both models (importance value: $1$). In the complete model, \textsc{Voicing} is also of very high importance  (importance value: $0.99$). For both data sets, the first \is{principal component analysis}principal component (\textsc{PC1}) reaches a rather high importance value (complete data set: $0.85$,  voiceless data set: $0.71$). The importance values of all other variables are much lower.
 \textsc{BaseInitialStress} has an importance value of $0.56$ in the complete data set and one of $0.41$ in the voiceless data set,   
 \textsc{PC2} has an importance value of $0.47$ in the complete data set and one of $0.40$ in the voiceless data set,   
@@ -1211,7 +1205,7 @@ The \isi{absolute duration} models feature a higher R-squared than the \isi{rela
 
 %Loc Speech 
 With regard to the noise variables, \textsc{LocalSpeechRate}, \textsc{Voicing}  and \textsc{BaseInitialStress} had a significant effect on consonant duration in the models. 
-In \isi{absolute duration}, \textsc{LocalSpeechRate} influenced fricative duration in the expected direction, i.e. the higher the \isi{speech rate}, the shorter the fricative. \textsc{LocalSpeechRate} did not affect the \isi{relative duration} of the fricative. 
+In \isi{absolute duration}, \textsc{LocalSpeechRate} influenced fricative duration in the expected direction, i.e. the higher the \isi{speech rate}, the shorter the fricative. \textsc{LocalSpeech\-Rate} did not affect the \isi{relative duration} of the fricative. 
 An effect of \textsc{Voicing} was found in the two models containing all \is{dis-}\prefix{dis}prefixed items, i.e. voiced and voiceless items. Voiced items are shorter than voiceless items in absolute and \isi{relative duration}.
 The effect of \textsc{BaseInitialStress} is less clear. While in \isi{relative duration}, an unstressed base-initial syllable leads to the shortening of the fricative in all \is{dis-}\prefix{dis}prefixed words, in the \isi{absolute duration} models the variable forms interactions. In the model with only voiceless items \textsc{BaseInitialStress} interacts with \textsc{SemanticTransparency},  in the complete model it interacts with \textsc{Environment}.
 
@@ -1222,7 +1216,7 @@ Both interactions with the variable \textsc{BaseInitialStress} are caused by onl
 In the voiceless model, we find that in opaque items with an unstressed base-initial syllable, i.e. in the three tokens of the type \textit{dissolution} and in the one token of the type \textit{discount}, consonants are shorter than in all other items. 
 In the complete model, we find that doubles in words with an unstressed base-initial syllable, i.e. doubles in the type \textit{dissolution}, are shorter than in all other double consonant items. They are as long as singletons. This means that while all other double consonants geminate, the double consonant in these words is not significantly longer than a singleton.
 
-The two \isi{absolute duration} models thus predict particularly short fricative durations for the same tokens, in particular tokens of the type \textit{dissolution}. The models differ, however, in how they explain the shortness of the consonant. While in the complete model the short double consonant is explained by the following unstressed syllable, in the voiceless model it is explained by the combination of an unstressed base-initial syllable with \isi{semantic opacity}. It remains unclear whether the short duration of /s/ in \textit{dissolution} is caused by its unstressed base-initial syllable, i.e. whether all \is{dis-}\prefix{dis}prefixed words degeminate when followed by an unstressed syllable, or whether it is caused by the combination of an unstressed base-initial syllable and \isi{semantic opacity}, or whether this is a type-specific effect.
+The two \isi{absolute duration} models thus predict particularly short fricative durations for the same tokens, in particular tokens of the type \textit{dissolution}. The models differ, however, in how they explain the shortness of the consonant. While in the complete model the short double consonant is explained by the following unstressed syllable, in the voiceless model it is explained by the combination of an unstressed base-initial syllable with \isi{semantic opacity}. It remains unclear whether the short duration of /s/ in \textit{dissolution} is caused by its unstressed base-initial syllable, i.e. whether all \is{dis-}\prefix{dis}prefixed words degeminate when followed by an unstressed syllable, or whether it is caused by the combination of an unstressed base-initial syllable and \isi{semantic opacity}, or whether this is a type-specific effect.\largerpage
 
 
 All in all, the analyses suggest that, in general, \is{dis-}\prefix{dis} geminates. Except for the complete \isi{absolute duration} model, in which one type with a double consonant degeminates, i.e. \textit{dissolution}, all  models show a robust effect of the variable \textsc{Environment}. In both absolute and \isi{relative duration}, doubles are significantly longer than singletons. There is no significant difference in duration between the two singleton levels. Furthermore, \isi{multi-model inferencing} supports the claim that \is{dis-}\prefix{dis} geminates by showing the importance of the variable \textsc{Environment} for all models. 
@@ -1233,13 +1227,22 @@ With regard to the other variables of interest, i.e. the \is{decomposability mea
 
 
 \subsection{The suffix \suffix{ly}}
-\subsubsection{Absolute duration}
+\subsubsection{Absolute duration}\largerpage
 
 After the exclusion of two outliers, the \is{-ly}\suffix{ly}-model showed a satisfactory distribution of residuals, and an initial model was fitted. 
 With regard to \isi{decomposability}, only the two \is{decomposability measure}decomposability measures \textsc{LSAScore} and log\textsc{RelativeFrequency} were tested in the model. As described in \sectref{The decomposability of the four affixes: a comparison}, in the \is{-ly}\suffix{ly}-data set the variables \textsc{SemanticTransparency}, \textsc{TypeOfBase}  and \textsc{SemanticTransparencyRat-ing} did not show any, or barely any, variation. Therefore, their effect on consonant duration in \is{-ly}\suffix{ly} could not be tested. The variable \textsc{PrecedingSegmentDuration} was also discarded. This was because of its high correlation with the variable \textsc{PrecedingSegment}, which would have caused \isi{collinearity} problems in the model. In preliminary analyses, the variable \textsc{PrecedingSegment} proved to be the better predictor. Therefore, this variable was used in the model and not \textsc{PrecedingSegmentDuration}. 
 
 The model for the \textit{ly-}data set was simplified according to the same procedure as the  previous models. A list of all tested interactions in the model can be found in \hyperref[Appendix C: Summaries of tested interactions in corpus study]{Appendix C}. 
 The final model is summarized in \tabref {tbl: corpus summary model ly}.
+
+
+The model explains about 24\% of the variance and features four variables of which three are significant. The three noise variables \textsc{LocalSpeechRate}, \textsc{PrecedingSegment} and log\textsc{WordFormFrequency} are significant. 
+The variable \textsc{Environment} does not show a significant effect but remained in the model as it is the crucial variable with regard to \isi{gemination}.
+
+
+
+\figref{fig:corpus covariates ly} displays the effects of \textsc{LocalSpeechRate} and \textsc{PrecedingSegment}. The left panel of the figure shows that with increasing \isi{speech rate} /l/ becomes shorter, and the right panel shows that after a vowel /l/ is longer than after a consonant. These effects are expected.\pagebreak
+
 
 
 \begin{table*}
@@ -1262,17 +1265,6 @@ The final model is summarized in \tabref {tbl: corpus summary model ly}.
 		\end{tabular}
 \end{table*}
 
-The model explains about 24\% of the variance and features four variables of which three are significant. The three noise variables \textsc{LocalSpeechRate}, \textsc{PrecedingSegment} and log\textsc{WordFormFrequency} are significant. 
-The variable \textsc{Environment} does not show a significant effect but remained in the model as it is the crucial variable with regard to \isi{gemination}.
-
-
-
-\figref{fig:corpus covariates ly} displays the effects of \textsc{LocalSpeechRate} and \textsc{PrecedingSegment}. The left panel of the figure shows that with increasing \isi{speech rate} /l/ becomes shorter, and the right panel shows that after a vowel /l/ is longer than after a consonant. These effects are expected.
-
-
-
-
-
 \begin{figure*}
 	\includegraphics[scale=.8] {images/Corpus/lyModelcov.png}
 	\caption{Effects of local speech rate and preceding segment on consonant duration in \suffix{ly}-data set}
@@ -1285,7 +1277,7 @@ The variable \textsc{Environment} does not show a significant effect but remaine
 
 \figref{fig:corpus main effects  ly} shows the effects of log\textsc{WordFormFrequency} and \textsc{Environment}.
 The left panel of the figure shows that with increasing \isi{frequency} /l/ becomes shorter. This is expected.
-The right panel of the figure shows the insignificant effect of \textsc{Environment} on consonant duration in \is{-ly}\suffix{ly}. The figure clearly shows that there is no durational difference between double /l/ (\texttt{l\#l}), \is{syllabicity}syllabic double /l/ (\is{syllabicity}syllabic \texttt{l\#l}) and singleton /l/ (\texttt{\#l}). The suffix \is{-ly}\suffix{ly} thus clearly degeminates in \isi{absolute duration}. 
+The right panel of the figure shows the insignificant effect of \textsc{Environment} on consonant duration in \is{-ly}\suffix{ly}. The figure clearly shows that there is no durational difference between double /l/ (\texttt{l\#l}), \is{syllabicity}syllabic double /l/ (\is{syllabicity}syllabic \texttt{l\#l}) and singleton /l/ (\texttt{\#l}). The suffix \is{-ly}\suffix{ly} thus clearly degeminates in \isi{absolute duration}.
 
 
 \begin{figure*}
@@ -1297,7 +1289,7 @@ The right panel of the figure shows the insignificant effect of \textsc{Environm
 
 
 
-To see which are the most predictive variables for consonant duration in the \is{-ly}\suffix{ly}-data set, I conducted a \isi{multi-model inferencing} analysis. As for the other data sets, the analyses did not include the variable \textsc{LSAScore} because of the low number of observations which were coded for \textsc{LSAScore}. The analysis revealed that \textsc{LocalSpeechRate} is the most important variable (importance value: $1$). With an importance value of $0.99$ the variable \textsc{PrecedingSegment} is the second most important value. It is followed by the two \isi{frequency} variables log\textsc{RelativeFrequen-cy} (importance value: $0.67$) and log\textsc{WordFormFrequency} (importance value: $0.64$). With importance values of $0.32$ (\textsc{Environment}) and $0.26$ (\textsc{BaseFinalStress}), the other variables are far less important for predicting consonant duration with \is{-ly}\suffix{ly}.
+To see which are the most predictive variables for consonant duration in the \is{-ly}\suffix{ly}-data set, I conducted a \isi{multi-model inferencing} analysis. As for the other data sets, the analyses did not include the variable \textsc{LSAScore} because of the low number of observations which were coded for \textsc{LSAScore}. The analysis revealed that \textsc{LocalSpeechRate} is the most important variable (importance value: $1$). With an importance value of $0.99$ the variable \textsc{PrecedingSegment} is the second most important value. It is followed by the two \isi{frequency} variables log\textsc{RelativeFre\-quency} (importance value: $0.67$) and log\textsc{WordFormFrequency} (importance val\-ue: $0.64$). With importance values of $0.32$ (\textsc{Environment}) and $0.26$ (\textsc{BaseFinal\-Stress}), the other variables are far less important for predicting consonant duration with \is{-ly}\suffix{ly}.
 
 
 \subsubsection{Relative duration}
@@ -1336,7 +1328,7 @@ In what follows I will therefore concentrate on \is{absolute duration}absolute c
 	\caption{Overview of significant variables in absolute duration models\label{tbl: Overview of results in the corpus study}}
 		\begin{tabular}{lccccc}
 			\lsptoprule
-			Variable & {un-} & {im-} &{un-} \& {im-} &{dis-}& {-ly}\\
+			Variable & \textit{un-} & \textit{im-} &\textit{un-} \& \textit{im-} &\textit{dis-}& \textit{-ly}\\
 			\midrule
 			\textsc{Environment}& \checkmark & \checkmark  & \checkmark & \checkmark & n.s. \\ 
 			\textsc{Affix }&- &\checkmark  & \checkmark  &- & -\\ 
@@ -1371,11 +1363,11 @@ Let us first discuss the noise variables. The variable \textsc{LocalSpeechRate} 
 For \is{dis-}\prefix{dis}, the variable \textsc{Voicing} is significant in the complete model. As expected, voiced items are shorter than voiceless items. The variable is irrelevant for all other models.
 
 \textsc{BaseInitialStress} affects consonant duration in the \is{in-}\prefix{in}model and in the \is{un-}\prefix{un} and \is{in-}\prefix{in} model. Before unstressed base-initial syllables the consonant is shorter than before \is{stress}stressed base-initial syllables. 
-In the \is{dis-}\prefix{dis}models, \textsc{BaseInitialStress} forms interactions with \textsc{Environment} and \textsc{SemanticTransparency}. As discussed thoroughly in \sectref{corpus results dis}, these interactions were caused by only a few items and their interpretation is therefore unclear. Either only \is{dis-}\prefix{dis}prefixed items with a double consonant are affected by \textsc{BaseInitialStress}, or only semantically opaque items are affected by \isi{stress}.
+In the \is{dis-}\prefix{dis}models, \textsc{BaseInitialStress} forms interactions with \textsc{Environment} and \textsc{SemanticTransparency}. As discuss\-ed thoroughly in \sectref{corpus results dis}, these interactions were caused by only a few items and their interpretation is therefore unclear. Either only \is{dis-}\prefix{dis}prefixed items with a double consonant are affected by \textsc{BaseInitialStress}, or only semantically opaque items are affected by \isi{stress}.
 
- \textsc{BaseInitialStress} does not affect consonant duration with \is{un-}\prefix{un}. The reason for the absence of the effect might be due to the distribution of \textsc{BaseInitialStress} across \is{un-}\prefix{un}prefixed words. Most \is{un-}\prefix{un}words feature a \is{stress}stressed base-initial syllable. This includes all items with a double consonant. This lack of variation in \isi{stress} might have caused the absence of the effect with \is{un-}\prefix{un}. It is also possible that other factors, such as \is{stress}prefixal stress, might have interfered with the effect of \textsc{BaseInitialStress}. As discussed in Chapter \ref{affixes}, the \isi{stress} status of \is{un-}\prefix{un} is yet unclear. Further research on \is{stress}prefixal stress is necessary to explore the relation of \isi{stress} and prefixal consonant duration further. This is, however, beyond the scope of this study.
+ \textsc{BaseInitialStress} does not affect consonant duration with \is{un-}\prefix{un}. The reason for the absence of the effect might be due to the distribution of \textsc{BaseInitialStress} across \is{un-}\prefix{un}prefixed words. Most \is{un-}\prefix{un}words feature a \is{stress}stressed base-initial syllable. This includes all items with a double consonant. This lack of variation in \isi{stress} might have caused the absence of the effect with \is{un-}\prefix{un}. It is also possible that other factors, such as \is{stress}prefixal stress, might have interfered with the effect of \textsc{BaseInitialStress}. As discussed in Chapter \ref{affixes}, the \isi{stress} status of \is{un-}\prefix{un} is yet unclear. Further research on \is{stress}prefixal stress is necessary to explore the relation of \isi{stress} and prefixal consonant duration further. This is, however, beyond the scope of this study.\largerpage
 
-For the suffix \is{-ly}\suffix{ly}, the two variables \textsc{PrecedingSegment} and log\textsc{WordFormFre-quency} show the expected effects. The consonant is shorter after a consonant than after a vowel, and more frequent words display shorter consonant durations than less frequent words. While \textsc{PrecedingSegment} was only coded for \is{-ly}\suffix{ly}, the variable log\textsc{WordFormFrequency} was included in all models. Only for \is{-ly}\suffix{ly} it affected consonant duration. There are various possible explanations for this. 
+For the suffix \is{-ly}\suffix{ly}, the two variables \textsc{PrecedingSegment} and log\textsc{WordForm\-Frequency} show the expected effects. The consonant is shorter after a consonant than after a vowel, and more frequent words display shorter consonant durations than less frequent words. While \textsc{PrecedingSegment} was only coded for \is{-ly}\suffix{ly}, the variable log\textsc{WordFormFrequency} was included in all models. Only for \is{-ly}\suffix{ly} it affected consonant duration. There are various possible explanations for this. 
 One possibility is that \isi{word form frequency} only affects consonant duration in suffixes but not in prefixes. Another possibility is that, while the effect exists for all affixes, it only reaches significance in the \is{-ly}\suffix{ly}-model. There are two arguments for this explanation.
  First, the \is{-ly}\suffix{ly}-model is the worst of all models, i.e. it explains the least variance. It is therefore easier for weaker effects to reach significance. 
  Second, out of all data sets the \is{-ly}\suffix{ly}-data set features the highest number of different types. Different types have different \is{frequency}frequencies, i.e. the distribution of log\textsc{WordFormFrequency} shows more variation in the \is{-ly}\suffix{ly}-data set than in the other data sets. As already discussed above, the lack of variation in the distribution of a variable might make it impossible to find effects. In other words, there might not be enough variation in log\textsc{WordFormFrequency} in the prefixal data sets to find effects.
@@ -1383,7 +1375,7 @@ One possibility is that \isi{word form frequency} only affects consonant duratio
 
 Let us now turn to the variables of interest. Out of the five \is{decomposability measure}decomposability measures only \textsc{SemanticTransparency} showed an effect on consonant duration. This effect was, however, only found in one model, i.e. the model predicting \is{absolute duration}absolute consonant duration with voiceless \is{dis-}\prefix{dis}.  Furthermore, the effect was only found in interaction with the variable \textsc{BaseInitialStress}. Since the interaction was caused by only a few items in the data set, its validity is yet unclear. 
 In none of the other models \isi{decomposability} directly played a role. 
-However, in two of the models \isi{decomposability} indirectly influenced duration. As discussed in \sectref{corpus dec}, the five affixes differ in their overall \isi{segmentability}. This difference is mirrored in consonant duration in the \is{in-}\prefix{in} and in the \is{un-}\prefix{un} and \is{in-}\prefix{in} model. In these models, the variable \textsc{Affix} significantly affects consonant duration. The affix \is{un-}\prefix{un} features the longest nasal, \is{negative in-}negative \prefix{in} features a significantly shorter nasal, and \is{locative in-}locative \prefix{in} has the shortest nasal out of the three. This decline in duration resembles the decline in \isi{segmentability} of the affixes. The prefix \is{un-}\prefix{un} is the most segmentable affix of the three, followed by \is{negative in-}negative \prefix{in}, followed by \is{locative in-}locative \prefix{in}. Thus, while word-specific \is{decomposability measure}decomposability measures did not affect consonant duration in the models, \isi{decomposability} influenced consonant duration in terms of the overall \isi{segmentability} of the affix.
+However, in two of the models \isi{decomposability} indirectly influenced duration. As discussed in \sectref{corpus dec}, the five affixes differ in their overall \isi{segmentability}. This difference is mirrored in consonant duration in the \is{in-}\prefix{in} and in the \is{un-}\prefix{un} and \is{in-}\prefix{in} model. In these models, the variable \textsc{Affix} significantly affects consonant duration. The affix \is{un-}\prefix{un} features the longest nasal, \is{negative in-}negative \prefix{in} features a significantly shorter nasal, and \is{locative in-}locative \prefix{in} has the shortest nasal out of the three. This decline in duration resembles the decline in \isi{segmentability} of the affixes. The prefix \is{un-}\prefix{un} is the most segmentable affix of the three, followed by \is{negative in-}negative \prefix{in}, followed by \is{locative in-}locative \prefix{in}. Thus, while word-specific \is{decomposability measure}decomposability measures did not affect consonant duration in the models, \isi{decomposability} influenced consonant duration in terms of the overall \isi{segmentability} of the affix.\largerpage
 
 
 The variable \textsc{Environment} significantly affected consonant duration in all prefixal models. For \is{-ly}\suffix{ly}, there was no significant difference in duration between the three tested environments.
@@ -1441,7 +1433,7 @@ The conditions of the predicted values are the same as in the partial effects pl
 \end{table}
 
 
-For \is{un-}\prefix{un}, \is{in-}\prefix{in} and \is{dis-}\prefix{dis}, double consonants are significantly longer than corresponding singletons. The only exception might be the double consonant in the word \textit{dissolution}. In the \is{dis-}\prefix{dis}model with all words, i.e. voiced and voiceless \is{dis-}\prefix{dis}prefixed words, a significant interaction between \textsc{Environment} and \textsc{BaseInitialStress} was found. Double consonant items with an unstressed base-initial syllable, i.e. words of the type \textit{dissolution}, degeminated. However, it is yet unclear whether this effect is universal, i.e. whether it applies to all \is{dis-}\prefix{dis}prefixed words with a double consonant and an unstressed base-initial syllable,  or whether the effect is caused by other factors, such as the word's opacity or type-specific effects. In Chapter \ref{Experimental Studies}, we will turn back to this question after considering the results of the experimental study.
+For \is{un-}\prefix{un}, \is{in-}\prefix{in} and \is{dis-}\prefix{dis}, double consonants are significantly longer than corresponding singletons. The only exception might be the double consonant in the word \textit{dissolution}. In the \is{dis-}\prefix{dis}model with all words, i.e. voiced and voiceless \is{dis-}\prefix{dis}pre\-fix\-ed words, a significant interaction between \textsc{Environment} and \textsc{BaseInitialStress} was found. Double consonant items with an unstressed base-initial syllable, i.e. words of the type \textit{dissolution}, degeminated. However, it is yet unclear whether this effect is universal, i.e. whether it applies to all \is{dis-}\prefix{dis}prefixed words with a double consonant and an unstressed base-initial syllable,  or whether the effect is caused by other factors, such as the word's opacity or type-specific effects. In Chapter \ref{Experimental Studies}, we will turn back to this question after considering the results of the experimental study.\largerpage
 
 The durational differences between doubles and singletons range from 23~ms to 47~ms.  The  \is{singleton-geminate ratio}{singleton-double ratio} for singletons followed by a consonant is comparable across all prefixes. The ratio is 1:1.4 for \is{un-}\prefix{un}, \is{in-}\prefix{in}, and \is{dis-}\prefix{dis} (in the complete data set). For voiceless \is{dis-}\prefix{dis} the ratio is 1:1.5.
 For singletons followed by a vowel, the absolute durational difference between doubles and singletons is practically the same for \is{un-}\prefix{un} and voiceless \is{dis-}\prefix{dis} (47~ms and 45~ms), but smaller for voiced and voiceless \is{dis-}\prefix{dis} (23~ms). The absolute durational differences for \is{dis-}\prefix{dis} and \is{un-}\prefix{un} suggest that both prefixes geminate to the same degree. However, the double-singleton ratios suggest the opposite. The ratio for \is{un-}\prefix{un} is much bigger than the ones for \is{dis-}\prefix{dis}. This indicates that \is{un-}\prefix{un} geminates to a higher degree than \is{dis-}\prefix{dis}.
@@ -1449,12 +1441,12 @@ For singletons followed by a vowel, the absolute durational difference between d
 
 In addition to the difference between doubles and singletons, a significant difference between the two singleton levels was found for \is{un-}\prefix{un}. Consonants followed by a vowel are significantly shorter than consonants followed by a consonant. This difference between the two singleton environments was not found for \is{dis-}\prefix{dis}. For \is{-ly}\suffix{ly} the variable \textsc{Environment} never reached significance, i.e. singletons, non-\is{syllabicity}syllabic doubles and \is{syllabicity}syllabic doubles are predicted to be of the same duration.
 
- A comparison of the singleton-double ratios found in this study with the ones in former studies is limited. Only two studies have investigated \isi{gemination} with the investigated affixes, i.e. \cite{Kaye.2005} and \cite{Oh.2012}. Out of the two, only \cite{Oh.2012} provide enough data for a sensible comparison. The comparison with \citeauthor{Oh.2012}'s study is, however, also restricted as they only investigated the prefixes \is{un-}\prefix{un} and \is{in-}\prefix{in} under experimental condition. Furthermore, consonant duration was only analyzed in intervocalic position, which forbids a straightforward comparison. 
+A comparison of the singleton-double ratios found in this study with the ones in former studies is limited. Only two studies have investigated \isi{gemination} with the investigated affixes, i.e. \cite{Kaye.2005} and \cite{Oh.2012}. Out of the two, only \cite{Oh.2012} provide enough data for a sensible comparison. The comparison with \citeauthor{Oh.2012}'s study is, however, also restricted as they only investigated the prefixes \is{un-}\prefix{un} and \is{in-}\prefix{in} under experimental condition. Furthermore, consonant duration was only analyzed in intervocalic position, which forbids a straightforward comparison. 
  
- For \is{un-}\prefix{un}, \cite{Oh.2012} find a ratio of 1:1.6 in \isi{normal speech}, and a ratio of 1:2.0 in \isi{careful speech}. For \is{in-}\prefix{in}, they find a ratio of 1:1.3 in normal and a ratio of 1:1.2 in \isi{careful speech}. 
- As \isi{normal speech} can be assumed to be more similar to \isi{conversational speech} than \isi{careful speech}, the singleton-geminate ratios of the present corpus study should be compared to the ones for \isi{normal speech}. 
- For both \is{un-}\prefix{un} and \is{in-}\prefix{in}, the comparison shows that the ratios found in the present study are bigger than the ones in \cite{Oh.2012}. 
-  One reason for this difference might be the different conditions under which the items were recorded, i.e. natural conversation vs. \is{experimental speech}experimental reading. The experimental study on \isi{gemination} will shed more light on this issue.
+For \is{un-}\prefix{un}, \cite{Oh.2012} find a ratio of 1:1.6 in \isi{normal speech}, and a ratio of 1:2.0 in \isi{careful speech}. For \is{in-}\prefix{in}, they find a ratio of 1:1.3 in normal and a ratio of 1:1.2 in \isi{careful speech}. 
+As \isi{normal speech} can be assumed to be more similar to \isi{conversational speech} than \isi{careful speech}, the singleton-geminate ratios of the present corpus study should be compared to the ones for \isi{normal speech}. 
+For both \is{un-}\prefix{un} and \is{in-}\prefix{in}, the comparison shows that the ratios found in the present study are bigger than the ones in \cite{Oh.2012}. 
+One reason for this difference might be the different conditions under which the items were recorded, i.e. natural conversation vs. \is{experimental speech}experimental reading. The experimental study on \isi{gemination} will shed more light on this issue.
 
 To summarize, the prefixes \is{un-}\prefix{un}, \is{in-}\prefix{in} and \is{dis-}\prefix{dis} geminate. The suffix \is{-ly}\suffix{ly} degeminates. No word-specific effect of \isi{decomposability} was found, but the \isi{segmentability} of the affix affected consonant duration in the expected way. Less segmentable affixes have shorter consonant durations. The effect of affix is independent of \isi{gemination}, i.e. all prefixes geminate. The comparison of singleton-geminate ratios indicates, however, that the prefix \is{un-}\prefix{un} geminates to a higher degree than the prefix \is{dis-}\prefix{dis}.
 
@@ -1468,7 +1460,7 @@ With regard to the theoretical approaches discussed in Chapter \ref{Theory}, the
 Let us first look at the formal linguistic approaches discussed. Even though all of them are categorical in nature and predict \isi{gemination} to be affix-specific, none of them is supported by the data. The fact that the \is{level 2 affix}{level 2} affix \is{-ly}\suffix{ly} degeminates, while the \is{level 1 affix}{level 1} affixes \is{dis-}\prefix{dis} and \is{in-}\prefix{in} geminate, falsifies the predictions made by \is{stratal approach}{stratal approaches}. That \is{in-}\prefix{in} and \is{dis-}\prefix{dis} geminate furthermore falsifies the predictions made by the Prosodic Word Approach according to which one should find variation in their \isi{gemination} pattern. 
 
 With regard to the psycholinguistic approaches discussed, only the two affix-specific approaches can be supported by data, i.e. the affix-specific Segmentability Approach and the affix-specific Morphological Informativeness Approach. 
-These two approaches are based on the two lexical \isi{segmentability} hierarchies introduced in \chapref{affixes} (see \tabref{fig:Segmentability hierarchies of  affixes repetition 2} for the two hierarchies). While the affix-specific Morphological Informativeness Approach predicts \isi{gemination} to pattern according to the Semantic Segmentability Hierarchy, the affix-specific Segmentability Approach does not specify according to which of the two \isi{segmentability} hierarchies \isi{gemination} should pattern. In other words, while the affix-specific Morphological Informativeness Approach is only supported if \isi{gemination} patterns according to the Semantic Segmentability Hierarchy, the affix-specific Segmentability Approach is also supported if \isi{gemination} patterns according to the Non-Semantic Segmentability Hierarchy. 
+These two approaches are based on the two lexical \isi{segmentability} hierarchies introduced in \chapref{affixes} (see \tabref{fig:Segmentability hierarchies of  affixes repetition 2} for the two hierarchies). While the affix-specific Morphological Informativeness Approach predicts \isi{gemination} to pattern according to the Semantic Segmentability Hierarchy, the affix-specific Segmentability Approach does not specify according to which of the two \is{segmentability}segmenta\-bility hierarchies \isi{gemination} should pattern. In other words, while the affix-specific Morphological Informativeness Approach is only supported if \isi{gemination} patterns according to the Semantic Segmentability Hierarchy, the affix-spe\-cif\-ic Segmentability Approach is also supported if \isi{gemination} patterns according to the Non-Semantic Segmentability Hierarchy. 
 
 
 The corpus study reveals that \isi{gemination}, at least partly, patterns according to the Semantic Segmentability Hierarchy (\prefix{un} > \{\prefix{dis}, \prefix{in}\textsubscript{\textsc{Neg}}\} >  \prefix{in}\textsubscript{\textsc{Loc}} > \suffix{ly}). 
